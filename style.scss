@@ -1,3 +1,9 @@
-img{
+img {
+    min-width: 30px;
     cursor: pointer;
+    z-index: 23;
+}
+.pick, img:hover{
+    background-color: orange;
+    border-radius: 10px;
 }
