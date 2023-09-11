@@ -54,4 +54,11 @@ td {
 
 .offcanvas a:hover {
   transform: scale(1.2);
+}
+
+.navbar-brand {
+  font-family: monospace;
+  font-style: italic;
+  font-weight: bold;
+  color: orange;
 }/*# sourceMappingURL=style.css.map */
