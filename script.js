@@ -2,12 +2,6 @@ const perks = document.querySelectorAll("tr img");
 const pName = document.querySelector('.perk-name')
 const pInfo = document.querySelector('.perk-info')
 
-for (let i = 0; i < perks.length; i++) {
-    perks[i].addEventListener('click', function () {
-        this.classList.toggle('pick')
-    })
-}
-
 perks.forEach(item => {
     item.addEventListener('mouseover', () => {
         const itemId = item.id;
