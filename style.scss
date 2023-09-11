@@ -2,7 +2,7 @@ body {
     height: 100vh;
     background-image: url('./images/wwz2.jpeg');
     background-position: center;
-    background-position-y: 60%;
+    background-position-y: 55%;
     background-repeat: no-repeat;
     background-size: fill;
 }
@@ -13,6 +13,7 @@ body {
 
 tr img {
     min-width: 30px;
+    width: 80px;
     cursor: pointer;
     z-index: 23;
 }
