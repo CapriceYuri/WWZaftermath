@@ -26,6 +26,7 @@ tr img:hover {
 
 .transparent {
     background: transparent;
+    backdrop-filter: blur(2px);
 }
 
 table,
@@ -34,6 +35,7 @@ tr,
 th,
 td {
     background-color: rgba(0, 0, 0, 0) !important;
+    backdrop-filter: blur(2px)
 }
 
 .offcanvas a {
