@@ -18,6 +18,12 @@ tr img {
   z-index: 23;
 }
 
+.pick,
+tr img:hover {
+  background-color: orange;
+  border-radius: 10px;
+}
+
 .transparent {
   background: transparent;
   -webkit-backdrop-filter: blur(2px);
