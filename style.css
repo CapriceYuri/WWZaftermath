@@ -1,3 +1,12 @@
+body {
+  height: 100vh;
+  background-image: url(/images/wwz2.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 20px red;
+}
+
 img {
   min-width: 30px;
   cursor: pointer;
@@ -7,4 +16,12 @@ img {
 .pick, img:hover {
   background-color: orange;
   border-radius: 10px;
+}
+
+.transparent {
+  background: transparent;
+}
+
+table, tbody, tr, th, td {
+  background-color: rgba(0, 0, 0, 0) !important;
 }/*# sourceMappingURL=style.css.map */
