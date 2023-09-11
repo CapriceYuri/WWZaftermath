@@ -1,6 +1,6 @@
 body{
     height: 100vh;
-    background-image: url('./images/wwz2.jpeg');
+    background-image: linear-gradient(0deg, rgba(242,172,122,0.7819502801120448) 10%, rgba(56,56,56,0.7987570028011204) 89%),url('./images/wwz2.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,7 +11,7 @@ img {
     cursor: pointer;
     z-index: 23;
 }
-.pick, img:hover{
+.pick, tr img:hover{
     background-color: orange;
     border-radius: 10px;
 }
@@ -19,5 +19,19 @@ img {
     background: transparent;
 }
 table, tbody, tr, th, td{
-    background-color: rgba(0, 0, 0, 0.0) !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+footer img:hover{
+    background-color: blue;
+}
+
+.offcanvas a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.list-group-flush a:hover {
+    background-color: orange;
 }

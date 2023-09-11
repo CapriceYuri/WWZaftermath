@@ -1,4 +1,4 @@
-const perks = document.querySelectorAll("img");
+const perks = document.querySelectorAll("tr img");
 const pName = document.querySelector('.perk-name')
 const pInfo = document.querySelector('.perk-info')
 
