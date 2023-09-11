@@ -416,8 +416,209 @@ perks.forEach(item => {
                 pName.textContent = 'Thumper II'
                 pInfo.textContent = 'Carried ammo capacity for Thumper GL increased by 1.'
                 break;
+
+            // DIVISON CODE 
+            // First Set
+            case 'ma1':
+                pName.textContent = 'Booster Shot'
+                pInfo.textContent = 'Start with a Stim Pistol, Compact SMG and free Medkit. Using Medkit on a teammate will also apply 25% of its effect to you.'
+                break;
+            case 'ma2':
+                pName.textContent = 'Painkiller II'
+                pInfo.textContent = 'Stim Pistol effects last 25% longer.'
+                break;
+
+            // First Column
+            case 'mb1':
+                pName.textContent = 'Doctor In The House'
+                pInfo.textContent = 'Medkits heal 10% more (base: 70%).'
+                break;
+            case 'mb2':
+                pName.textContent = 'Triage'
+                pInfo.textContent = 'Apply Medkits 50% faster [base: 4 seconds].'
+                break;
+            case 'mb3':
+                pName.textContent = 'Sugar Coated'
+                pInfo.textContent = 'Healing a teammate with a Medkit also grants them a temporary health boost.'
+                break;
+            case 'mb4':
+                pName.textContent = 'Breathe Deeply'
+                pInfo.textContent = 'The rounds of the Stim Pistol are replaced with healing gas syringes that burst upon contact with surfaces, releasing healing gas that grants a 75% temporary health boost to all players.'
+                break;
+
+            // Second Column
+            case 'mc1':
+                pName.textContent = 'Patch Up'
+                pInfo.textContent = 'Restore 30% health to a teammate after reviving them (base: 20%).'
+                break;
+            case 'mc2':
+                pName.textContent = 'Paramedic'
+                pInfo.textContent = 'Revive speed increased by 50%.'
+                break;
+            case 'mc3':
+                pName.textContent = 'Pick Me Up'
+                pInfo.textContent = 'When you revive a teammate, both of you gain temporary health boost.'
+                break;
+            case 'mc4':
+                pName.textContent = 'Candy'
+                pInfo.textContent = `Reviving a teammate in battle restores one equipment charge for both of you.`
+                break;
+
+            // Third Column
+            case 'md1':
+                pName.textContent = 'Big Pharma'
+                pInfo.textContent = 'Max number of Stim Pistol charges increased to 4 [base: 3 charges].'
+                break;
+            case 'md2':
+                pName.textContent = 'Painkiller'
+                pInfo.textContent = 'Stim Pistol gives 25% more temporary health and its effects last 50% longer.'
+                break;
+            case 'md3':
+                pName.textContent = 'Empathy'
+                pInfo.textContent = `Using the Stim Pistol on a teammate will also apply 50% of its effect to you.`
+                break;
+            case 'md4':
+                pName.textContent = `Take A Break`
+                pInfo.textContent = `Using the Stim Pistol on a teammate also fully restores their stamina for melee strikes.`
+                break;
+
+            // Second Set
+            case 'me1':
+                pName.textContent = 'Tenacity'
+                pInfo.textContent = 'All incapacitated team members will stay alive for 30% longer (base: 40 seconds).'
+                break;
+            case 'me2':
+                pName.textContent = 'Triage II'
+                pInfo.textContent = 'Apply Medkits 25% faster [base: 4 seconds].'
+                break;
+
+            // 2 First Column
+            case 'mf1':
+                pName.textContent = 'Second Wind'
+                pInfo.textContent = '25% chance to regain 25% health and keep going instead of becoming incapacitated (cooldown 60 seconds).'
+                break;
+            case 'mf2':
+                pName.textContent = 'Wheatgrass'
+                pInfo.textContent = 'Health increased by 25%.'
+                break;
+            case 'mf3':
+                pName.textContent = 'Navy Seal'
+                pInfo.textContent = 'Start with SMG TMP5.'
+                break;
+            case 'mf4':
+                pName.textContent = 'Trail Of Breadcrumbs'
+                pInfo.textContent = `All medical items within 10 meters will be automatically marked if you don't have any.`
+                break;
+
+            // 2 Second Column
+            case 'mg1':
+                pName.textContent = 'Efficiency'
+                pInfo.textContent = `30% chance of using a Medkit without depleting your supply.`
+                break;
+            case 'mg2':
+                pName.textContent = 'Good Karma'
+                pInfo.textContent = 'Using Medkit on a teammate will also apply 50% of its effect to you.'
+                break;
+            case 'mg3':
+                pName.textContent = `Combat Medic`
+                pInfo.textContent = 'Kill 15 zombies in rapid succession gives 50% chance to receive a Medkit (cooldown 180 seconds).'
+                break;
+            case 'mg4':
+                pName.textContent = `They Don't Need It At All`
+                pInfo.textContent = `There is a chance that killing a special zombie will cause it to drop a medical item (cooldown: 180 seconds).`
+                break;
+
+            // 2 Third Column
+            case 'mh1':
+                pName.textContent = 'Free Hugs'
+                pInfo.textContent = '25% chance of using the Stim Pistol without depleting its charge.'
+                break;
+            case 'mh2':
+                pName.textContent = 'Pickpocket'
+                pInfo.textContent = 'Killing 15 zombies in rapid succession refills one equipment charge (cooldown 20 seconds).'
+                break;
+            case 'mh3':
+                pName.textContent = `I'll Take That`
+                pInfo.textContent = 'Killing a special zombie restores one equipment charge (cooldown 30 seconds).'
+                break;
+            case 'mh4':
+                pName.textContent = 'It Was Intentional'
+                pInfo.textContent = `Using the Stim Pistol creates an additional healing gas cloud under your feet (cooldown: 30 seconds).`
+                break;
+
+            // Third Set
+            case 'mi1':
+                pName.textContent = 'Fighting Chance'
+                pInfo.textContent = 'Using the Stim Pistol on a teammate who is pinned will get them to their feet.'
+                break;
+            case 'mi2':
+                pName.textContent = 'Remote Healthcare'
+                pInfo.textContent = 'Stim Pistol range increased by 25%.'
+                break;
+
+            // 3 First Column
+            case 'mj1':
+                pName.textContent = 'Forgive And Forget'
+                pInfo.textContent = 'Friendly fire damage reduced by 25% for all team members.'
+                break;
+            case 'mj2':
+                pName.textContent = 'In The Zone'
+                pInfo.textContent = 'Using a Stim Pistol or Medkit adds a 50% firearm damage boost for 10 seconds.'
+                break;
+            case 'mj3':
+                pName.textContent = 'Fighting Fit'
+                pInfo.textContent = 'Firearm damage increased by 25% when your whole team have more than 50% health.'
+                break;
+            case 'mj4':
+                pName.textContent = 'Just A Scratch'
+                pInfo.textContent = `While under the Stim Pistol's effect, the player receives 10% less damage from any source.`
+                break;
+
+            // 3 Second Column
+            case 'mk1':
+                pName.textContent = 'Battle Surgeon'
+                pInfo.textContent = 'Stim Pistol heals 10% of health in addition to the boost effect.'
+                break;
+            case 'mk2':
+                pName.textContent = 'Emergency Rescue'
+                pInfo.textContent = `When your health drops below 25%, you gain temporary health (cooldown 180 seconds).`
+                break;
+            case 'mk3':
+                pName.textContent = 'Secret Ingredient'
+                pInfo.textContent = 'Stim Pistol grants additional masking effect lasting 5 seconds.'
+                break;
+            case 'mk4':
+                pName.textContent = `Too Slowly`
+                pInfo.textContent = `Reload speed is increased by 10% under the effect of the Stim Pistol.`
+                break;
+
+            // 3 Third Column
+            case 'ml1':
+                pName.textContent = 'Lobotomy'
+                pInfo.textContent = 'Restore 2 rounds in magazine for each headshot made with SMG.'
+                break;
+            case 'ml2':
+                pName.textContent = 'Swapping Mags!'
+                pInfo.textContent = `SMGs' reload speed increased by 25%.`
+                break;
+            case 'ml3':
+                pName.textContent = 'Adrenaline'
+                pInfo.textContent = 'Reload speed increased by 50% when health is below 35%.'
+                break;
+            case 'ml4':
+                pName.textContent = `Emergency Measures`
+                pInfo.textContent = `Penetration of SMGs is increased by 1 while the player's health is below 30%.`
+                break;
+
+            // Fourth Set
+            case 'mm1':
+                pName.textContent = `Doctor's Bag`
+                pInfo.textContent = 'Medkits used by you and your teammates restore 10% more health.'
+                break;
+            case 'mm2':
+                pName.textContent = 'Navy Seal II'
+                pInfo.textContent = 'SMG range increased by 25%.'
+                break;
         }
-
-
     })
 })
