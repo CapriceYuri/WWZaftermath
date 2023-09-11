@@ -213,6 +213,211 @@ perks.forEach(item => {
                 pName.textContent = 'Fire In The Hole II'
                 pInfo.textContent = 'Frag Grenade can kill 20% more targets (base: 14).'
                 break;
+
+            // DIVISON CODE 
+            // First Set
+            case 'hra1':
+                pName.textContent = 'Demoman'
+                pInfo.textContent = 'Start with C4, Shotgun and Hailstorm MGL.'
+                break;
+            case 'hra2':
+                pName.textContent = 'Throwing Arm II'
+                pInfo.textContent = 'Throw distance of a C4 increased by 25%.'
+                break;
+
+            // First Column
+            case 'hrb1':
+                pName.textContent = 'Throwing Arm'
+                pInfo.textContent = 'Throw distance of a C4 increased by 50%.'
+                break;
+            case 'hrb2':
+                pName.textContent = 'Here Kitty'
+                pInfo.textContent = 'C4 will attract zombies for 5 seconds after being planted but can kill 35% less targets (base: 14).'
+                break;
+            case 'hrb3':
+                pName.textContent = 'Not Today'
+                pInfo.textContent = 'You may become incapacitated 1 additional time before dying.'
+                break;
+            case 'hrb4':
+                pName.textContent = 'The Perfect Composition'
+                pInfo.textContent = 'The explosion radius of C4 and Claymores is increased by 25%.'
+                break;
+
+            // Second Column
+            case 'hrc1':
+                pName.textContent = 'Welcome Mat'
+                pInfo.textContent = 'Upon trigger Claymores will attract zombies for 3 seconds before explosion. Start with Claymores.'
+                break;
+            case 'hrc2':
+                pName.textContent = 'Green Fingered'
+                pInfo.textContent = 'Planting speed of Claymores is increased by 50%. 25% chance to plant the Claymore at no cost to your equipment. Start with Claymores.'
+                break;
+            case 'hrc3':
+                pName.textContent = 'Welcoming Committee'
+                pInfo.textContent = 'Any mortar used by you or teammates can kill 25% more targets (base: 40).'
+                break;
+            case 'hrc4':
+                pName.textContent = 'Impact Grenades'
+                pInfo.textContent = `Projectiles fired from the Hailstorm MGL explode upon contact.`
+                break;
+
+            // Third Column
+            case 'hrd1':
+                pName.textContent = 'Unshakeable'
+                pInfo.textContent = 'Self-inflicted explosive damage reduced by 100%.'
+                break;
+            case 'hrd2':
+                pName.textContent = 'Directed Blast'
+                pInfo.textContent = 'You deal 100% more damage to zombies with all explosives.'
+                break;
+            case 'hrd3':
+                pName.textContent = 'Nimble Thumbs'
+                pInfo.textContent = `All shotgun's reload speed increased by 50%.`
+                break;
+            case 'hrd4':
+                pName.textContent = `You've Worn Me Out`
+                pInfo.textContent = `Killing enemies with equipment restores 2 grenades for the Hailstorm MGL.`
+                break;
+
+            // Second Set
+            case 'hre1':
+                pName.textContent = 'Demolition Squad'
+                pInfo.textContent = 'Explosive equipment can kill 25% more targets. Applies for the whole team.'
+                break;
+            case 'hre2':
+                pName.textContent = 'Sleight Of Hand'
+                pInfo.textContent = 'Switch weapons 25% faster.'
+                break;
+
+            // 2 First Column
+            case 'hrf1':
+                pName.textContent = 'Bounty Hunter'
+                pInfo.textContent = 'Deal 25% more damage to special zombies.'
+                break;
+            case 'hrf2':
+                pName.textContent = 'Wheatgrass'
+                pInfo.textContent = 'Health increased by 25%.'
+                break;
+            case 'hrf3':
+                pName.textContent = 'Walk Softly'
+                pInfo.textContent = 'Start with a S890 shotgun.'
+                break;
+            case 'hrf4':
+                pName.textContent = 'Smells Like Gunpowder'
+                pInfo.textContent = `All Hailstorm MGLs within 10 meters will be automatically marked if you don't have a heavy weapon.`
+                break;
+
+            // 2 Second Column
+            case 'hrg1':
+                pName.textContent = 'Tooled Up'
+                pInfo.textContent = `Increase Claymore capacity to 4 and C4 capacity to 3.`
+                break;
+            case 'hrg2':
+                pName.textContent = 'Pickpocket'
+                pInfo.textContent = 'Killing 15 zombies in rapid succession refills one equipment charge (cooldown 60 seconds).'
+                break;
+            case 'hrg3':
+                pName.textContent = `I'll Take That`
+                pInfo.textContent = 'Killing a special zombie restores one equipment charge (cooldown 60 seconds).'
+                break;
+            case 'hrg4':
+                pName.textContent = 'Shrapnel'
+                pInfo.textContent = `All your explosives can kill 10% more targets.`
+                break;
+
+            // 2 Third Column
+            case 'hrh1':
+                pName.textContent = 'Free Refill I'
+                pInfo.textContent = 'Restores 1% of primary weapon ammo for each kill made with equipment.'
+                break;
+            case 'hrh2':
+                pName.textContent = 'Free Refill II'
+                pInfo.textContent = 'Each kill made with equipment restores 1 round to your primary weapon magazine.'
+                break;
+            case 'hrh3':
+                pName.textContent = 'Third Hand'
+                pInfo.textContent = 'Killing 15 zombies in rapid succession instantly reloads your primary weapon.'
+                break;
+            case 'hrh4':
+                pName.textContent = 'Free Refill III'
+                pInfo.textContent = `There is a chance that killing a special zombie will cause it to drop a Hailstorm MGL (cooldown: 180 seconds).`
+                break;
+
+            // Third Set
+            case 'hri1':
+                pName.textContent = 'Hollywood'
+                pInfo.textContent = 'Explosive and fire damage dealt to yourself and your teammates reduced by 30%.'
+                break;
+            case 'hri2':
+                pName.textContent = 'Directed Blast II'
+                pInfo.textContent = 'Your explosives can kill 10% more targets.'
+                break;
+
+            // 3 First Column
+            case 'hrj1':
+                pName.textContent = 'Scorched Earth'
+                pInfo.textContent = 'Claymore and C4 explosions will set the nearby area on fire.'
+                break;
+            case 'hrj2':
+                pName.textContent = 'Deep Pockets'
+                pInfo.textContent = 'Carried ammo capacity for heavy weapon increased by 35%.'
+                break;
+            case 'hrj3':
+                pName.textContent = 'Hole Puncher'
+                pInfo.textContent = 'Shotgun range increased by 50%.'
+                break;
+            case 'hrj4':
+                pName.textContent = 'Alert Red!'
+                pInfo.textContent = `C4 explosions also release a gas cloud that grants a masking effect to players and hurts zombies.`
+                break;
+
+            // 3 Second Column
+            case 'hrk1':
+                pName.textContent = 'Senjata'
+                pInfo.textContent = 'Start with a Senjata PDW in your secondary weapon slot.'
+                break;
+            case 'hrk2':
+                pName.textContent = 'Thumper'
+                pInfo.textContent = `Start with a Thumper GL in your secondary weapon slot.`
+                break;
+            case 'hrk3':
+                pName.textContent = 'Heavy Rain'
+                pInfo.textContent = 'Start with improved Hailstorm MGL that does 50% more damage, and has 50% more ammo. All Hailstorm MGL pickups for you also improved [base: 8 ammo].'
+                break;
+            case 'hrk4':
+                pName.textContent = `Ride Of The Valkyries`
+                pInfo.textContent = `Start with an improved Multi-shot Rocket Launcher that kills 50% more zombies. All MRL202 Commando pickups for you are also improved [base: 4 ammo].`
+                break;
+
+            // 3 Third Column
+            case 'hrl1':
+                pName.textContent = 'Knock Knock'
+                pInfo.textContent = 'Start with a Breaching Charge.'
+                break;
+            case 'hrl2':
+                pName.textContent = 'Job Satisfaction'
+                pInfo.textContent = 'Killing 15 zombies in rapid succession grants a temporary health boost.'
+                break;
+            case 'hrl3':
+                pName.textContent = 'Predator'
+                pInfo.textContent = 'Killing special zombies boosts firearm damage by 50% for 10 seconds.'
+                break;
+            case 'hrl4':
+                pName.textContent = `All Around Is Ashes`
+                pInfo.textContent = `The Thumper GL deals 25% increased damage.`
+                break;
+
+            // Fourth Set
+            case 'hrm1':
+                pName.textContent = 'Technician'
+                pInfo.textContent = 'C4, Claymore Landmines and MGL can kill 25% more targets.'
+                break;
+            case 'hrm2':
+                pName.textContent = 'Thumper II'
+                pInfo.textContent = 'Carried ammo capacity for Thumper GL increased by 1.'
+                break;
         }
+
+
     })
 })
