@@ -619,6 +619,618 @@ perks.forEach(item => {
                 pName.textContent = 'Navy Seal II'
                 pInfo.textContent = 'SMG range increased by 25%.'
                 break;
+
+
+            // DIVISON CODE 
+            // First Set
+            case 'fa1':
+                pName.textContent = 'Mule'
+                pInfo.textContent = 'Start with a Supply Bag and Scout Rifle. Increase carried ammo capacity for primary and secondary weapons by 10% for all teammates.'
+                break;
+            case 'fa2':
+                pName.textContent = 'Knock Knock II'
+                pInfo.textContent = '10% chance of using Breaching Charge without spending it.'
+                break;
+
+            // First Column
+            case 'fb1':
+                pName.textContent = 'Kickback'
+                pInfo.textContent = 'When a teammate uses your Supply Bag there is a 20% chance you will also gain explosive ammo.'
+                break;
+            case 'fb2':
+                pName.textContent = 'Armory'
+                pInfo.textContent = 'Using a Supply Bag gives a 20% chance to restore one equipment charge. But the bag owner can only restore his equipment when someone else gains this benefit from his bag.'
+                break;
+            case 'fb3':
+                pName.textContent = 'Stand By Me'
+                pInfo.textContent = 'Increases firearm damage by 100% for 10 seconds when reviving or unpinning a teammate.'
+                break;
+            case 'fb4':
+                pName.textContent = 'It Might Work'
+                pInfo.textContent = 'You can restore a depleted automatic turret with a 20% chance (10% for the Horde mode).'
+                break;
+
+            // Second Column
+            case 'fc1':
+                pName.textContent = 'Night Owl'
+                pInfo.textContent = 'Masking Grenades grant an additional temporary health boost. Start with Masking Grenades.'
+                break;
+            case 'fc2':
+                pName.textContent = 'Side Effects'
+                pInfo.textContent = 'Masking Grenade gas is lethal to zombies. Start with Masking Grenades.'
+                break;
+            case 'fc3':
+                pName.textContent = `Give Em Hell`
+                pInfo.textContent = 'Reviving a teammate grants explosive ammo for both of you.'
+                break;
+            case 'fc4':
+                pName.textContent = 'No Need For Instructions'
+                pInfo.textContent = `Automatic turrets placed by you and your allies deal 25% more damage.`
+                break;
+
+            // Third Column
+            case 'fd1':
+                pName.textContent = 'Knock Knock'
+                pInfo.textContent = 'You start with a Breaching Charge.'
+                break;
+            case 'fd2':
+                pName.textContent = 'Paramedic'
+                pInfo.textContent = 'Revive speed increased by 100%.'
+                break;
+            case 'fd3':
+                pName.textContent = 'Cloakroom'
+                pInfo.textContent = `Reviving a teammate grants masking effect for 3 seconds for both of you.`
+                break;
+            case 'fd4':
+                pName.textContent = `Cheer Up`
+                pInfo.textContent = `Reviving a teammate refills one equipment charge for both of you.`
+                break;
+
+            // Second Set
+            case 'fe1':
+                pName.textContent = 'Please Stand Up'
+                pInfo.textContent = 'If everyone in a team is incapacitated or pinned by a zombie then the Fixer is able to stand up (cooldown 60 seconds).'
+                break;
+            case 'fe2':
+                pName.textContent = 'Paramedic II'
+                pInfo.textContent = 'Revive speed increased by 25%.'
+                break;
+
+            // 2 First Column
+            case 'ff1':
+                pName.textContent = 'My Round I'
+                pInfo.textContent = 'Increase carried ammo capacity for primary and secondary weapons by 10% for you and all teammates.'
+                break;
+            case 'ff2':
+                pName.textContent = 'Wheatgrass'
+                pInfo.textContent = 'Health increased by 25%.'
+                break;
+            case 'ff3':
+                pName.textContent = 'Gunner'
+                pInfo.textContent = 'Start with Sporting Carbine Pac-15.'
+                break;
+            case 'ff4':
+                pName.textContent = 'Scrap Metal... Again'
+                pInfo.textContent = `All equipment bags within 20 meters will be automatically marked if you have no equipment charges.`
+                break;
+
+            // 2 Second Column
+            case 'fg1':
+                pName.textContent = 'One For The Road'
+                pInfo.textContent = `Max Masking Grenade and Supply Bag capacity increased to 2. However Masking Grenade effect duration decreased by 3 seconds and Supply Bag contains 25% less explosive ammo.`
+                break;
+            case 'fg2':
+                pName.textContent = 'Pickpocket'
+                pInfo.textContent = 'Kill 15 zombies in rapid succession refills one equipment charge (cooldown 90 seconds).'
+                break;
+            case 'fg3':
+                pName.textContent = `Scavenger`
+                pInfo.textContent = 'Killing special zombie restores one equipment charge (cooldown 90 seconds).'
+                break;
+            case 'fg4':
+                pName.textContent = `I Am Not A Snack`
+                pInfo.textContent = `There is a chance that killing a special zombie will cause it to drop an equipment bag (cooldown: 180 seconds).`
+                break;
+
+            // 2 Third Column
+            case 'fh1':
+                pName.textContent = 'Instand Replay'
+                pInfo.textContent = 'Anyone that uses your supply bag restores 20% of their primary weapon ammunition (base 10%).'
+                break;
+            case 'fh2':
+                pName.textContent = 'Under The Table'
+                pInfo.textContent = 'Anyone entering Masking Grenade gas cloud restores 10% of primary weapon ammo.'
+                break;
+            case 'fh3':
+                pName.textContent = `Go Get Em`
+                pInfo.textContent = `Reviving a teammate will restore 25% of primary weapon's ammunition for you and your teammate.`
+                break;
+            case 'fh4':
+                pName.textContent = 'Almost Missed'
+                pInfo.textContent = `Damage to marked enemies is increased by 10% for you and your team.`
+                break;
+
+            // Third Set
+            case 'fi1':
+                pName.textContent = 'Efficiency'
+                pInfo.textContent = 'Supply bag contains 25% more explosive ammo. Masking grenade effect duration increased by 2 seconds.'
+                break;
+            case 'fi2':
+                pName.textContent = 'My Round III'
+                pInfo.textContent = 'Carried ammo capacity increased for primary and secondary weapons by 5% for you and all teammates.'
+                break;
+
+            // 3 First Column
+            case 'fj1':
+                pName.textContent = 'Lighting Hands'
+                pInfo.textContent = `All semi automatic rifles' reload speed increased by 25%.`
+                break;
+            case 'fj2':
+                pName.textContent = 'Power Shot'
+                pInfo.textContent = 'All semi automatic rifles gain increased penetration.'
+                break;
+            case 'fj3':
+                pName.textContent = 'Casull 6'
+                pInfo.textContent = 'Start with a Casull 6 in your secondary weapon slot.'
+                break;
+            case 'fj4':
+                pName.textContent = `It Ain't Much But...`
+                pInfo.textContent = `The first 5% of ammo in the primary weapon's magazine will be explosive for the entire team.`
+                break;
+
+            // 3 Second Column
+            case 'fk1':
+                pName.textContent = 'Fourth Of July'
+                pInfo.textContent = 'Your Supply Bag can be used 1 more time(s) before depleting (base 4 uses).'
+                break;
+            case 'fk2':
+                pName.textContent = 'Shadow Walker'
+                pInfo.textContent = `Masking Grenade effect duration increased by 2 seconds (base 6 seconds).`
+                break;
+            case 'fk3':
+                pName.textContent = 'Darkness Falls'
+                pInfo.textContent = 'Masking Grenade gas cloud duration is increased by 7 seconds (base 5 seconds).'
+                break;
+            case 'fk4':
+                pName.textContent = `Hidden Pocket`
+                pInfo.textContent = `Using a Supply Bag additionally restores the secondary weapon's ammunition.`
+                break;
+
+            // 3 Third Column
+            case 'fl1':
+                pName.textContent = 'My Round II'
+                pInfo.textContent = 'Increase carried ammo capacity for heavy weapons by 10% for all teammates'
+                break;
+            case 'fl2':
+                pName.textContent = 'Bandolier'
+                pInfo.textContent = `Mortar and Stationary machinegun ammo capacity increased by 25% for all team. Durability of defenses increased by 25% for all team [base: 4 Mortar ammo, 200 machinegun ammo].`
+                break;
+            case 'fl3':
+                pName.textContent = 'The Big Five O'
+                pInfo.textContent = 'Start with improved BF25 Payload Rifle that deals 50% more damage and has 50% more ammo. All BF25 Payload Rifle pickups for you also improved [base: 6 ammo].'
+                break;
+            case 'fl4':
+                pName.textContent = `3 in 1`
+                pInfo.textContent = `The first use of a placed Supply Bag will restore 10% health to you and your allies, but its total usage number is reduced by 1.`
+                break;
+
+            // Fourth Set
+            case 'fm1':
+                pName.textContent = `Corporate Power Nap`
+                pInfo.textContent = 'Unequipped weapon automatically reloads every 10 seconds for all teammates'
+                break;
+            case 'fm2':
+                pName.textContent = 'Bounty Hunter'
+                pInfo.textContent = 'Deal 10% more damage to special zombies.'
+                break;
+
+
+            // DIVISON CODE 
+            // First Set
+            case 'sa1':
+                pName.textContent = 'Shock Troops'
+                pInfo.textContent = `Start with Stun Gun and Compact SMG. Melee strikes damage two targets and do twice more damage when you're not tired. Melee attacks are not slower when tired.`
+                break;
+            case 'sa2':
+                pName.textContent = 'Juiced Up II'
+                pInfo.textContent = 'Stun Gun effect duration increased by 15%.'
+                break;
+
+            // First Column
+            case 'sb1':
+                pName.textContent = 'Crowd Control'
+                pInfo.textContent = 'Push radius from melee attacks increased by 50%.'
+                break;
+            case 'sb2':
+                pName.textContent = 'All Elbows'
+                pInfo.textContent = 'Movement speed penalty when zombies are very close reduced by 100%.'
+                break;
+            case 'sb3':
+                pName.textContent = 'Rooted'
+                pInfo.textContent = 'You can never be pinned down by usual zombies (does not affect special zombies).'
+                break;
+            case 'sb4':
+                pName.textContent = 'Crowd Control II'
+                pInfo.textContent = 'Restore one equipment charge when your health drops below 35%.'
+                break;
+
+            // Second Column
+            case 'sc1':
+                pName.textContent = 'Juiced Up'
+                pInfo.textContent = 'Stun Gun effect duration increased by 100%.'
+                break;
+            case 'sc2':
+                pName.textContent = 'Zeus'
+                pInfo.textContent = 'Increase Stun Gun range by 50% and target count to 20 (base range: 12 m, base target count: 15).'
+                break;
+            case 'sc3':
+                pName.textContent = `High Voltage`
+                pInfo.textContent = 'Stun Gun damage Increased by 150%.'
+                break;
+            case 'sc4':
+                pName.textContent = 'Clear!'
+                pInfo.textContent = `Using the Stun Gun on a pinned teammate will get them to their feet.`
+                break;
+
+            // Third Column
+            case 'sd1':
+                pName.textContent = 'Bullet-Dodger'
+                pInfo.textContent = 'Take 100% less friendly fire from bullets while performing melee attacks.'
+                break;
+            case 'sd2':
+                pName.textContent = 'Nimble'
+                pInfo.textContent = 'Take 50% less damage while performing melee attacks.'
+                break;
+            case 'sd3':
+                pName.textContent = 'With My Last Breath'
+                pInfo.textContent = `Melee strikes damage 2 more targets when health is below 35%.`
+                break;
+            case 'sd4':
+                pName.textContent = `Blood Is Boiling`
+                pInfo.textContent = `You deal 50% more damage to special zombies with a melee weapon if your health is below 35%.`
+                break;
+
+            // Second Set
+            case 'se1':
+                pName.textContent = 'Slice And Dice'
+                pInfo.textContent = 'You and all teammates can perform more melee strikes (+2) before becoming tired.'
+                break;
+            case 'se2':
+                pName.textContent = 'Zeus II'
+                pInfo.textContent = 'Increase Stun Gun range by 15% [base: 12 meters].'
+                break;
+
+            // 2 First Column
+            case 'sf1':
+                pName.textContent = 'Trophy Hunter'
+                pInfo.textContent = 'Deal 25% more damage to special zombies.'
+                break;
+            case 'sf2':
+                pName.textContent = 'Wheatgrass'
+                pInfo.textContent = 'Health increased by 25%.'
+                break;
+            case 'sf3':
+                pName.textContent = 'Silent Killer'
+                pInfo.textContent = 'Start with a TMP5 SMG with silencer upgrade.'
+                break;
+            case 'sf4':
+                pName.textContent = 'Where Are You?'
+                pInfo.textContent = `All Lurkers within 10 meters are automatically marked.`
+                break;
+
+            // 2 Second Column
+            case 'sg1':
+                pName.textContent = 'Vigour'
+                pInfo.textContent = `Killing 10 zombies in rapid succession with a melee weapon grants temporary health boost (cooldown 30 seconds).`
+                break;
+            case 'sg2':
+                pName.textContent = 'Cloak And Dagger'
+                pInfo.textContent = 'Killing 10 zombies in rapid succession with a melee weapon grants a masking effect (cooldown 30 seconds).'
+                break;
+            case 'sg3':
+                pName.textContent = `Third Hand`
+                pInfo.textContent = 'Killing 5 zombies with melee strikes in rapid succession instantly reloads your primary weapon.'
+                break;
+            case 'sg4':
+                pName.textContent = `Relentlessly`
+                pInfo.textContent = `Killing 10 zombies in rapid succession with a melee weapon restores 5% of your health (cooldown: 30 seconds).`
+                break;
+
+            // 2 Third Column
+            case 'sh1':
+                pName.textContent = 'Heavy Metal I'
+                pInfo.textContent = 'Start with an improved Forest Warrior Chainsaw that deals 50% more damage and has 50% more fuel. All Forest Warrior Chainsaw pickups for you are also improved [base: 100 fuel].'
+                break;
+            case 'sh2':
+                pName.textContent = 'Heavy Metal II'
+                pInfo.textContent = 'Starts with improved Taiga-12 Heavy Assault Shotgun that deals 25% more damage and has 25% more ammo. All Taiga-12 Heavy Assault Shotgun pickups for you also improved [base: 50 ammo].'
+                break;
+            case 'sh3':
+                pName.textContent = `Battle Cry`
+                pInfo.textContent = `Automatically stand up from being pinned after 5 seconds.`
+                break;
+            case 'sh4':
+                pName.textContent = 'Thank You For The Chance'
+                pInfo.textContent = `30% chance of using an Adrenaline kit without depleting your supply.`
+                break;
+
+            // Third Set
+            case 'si1':
+                pName.textContent = 'Executioner'
+                pInfo.textContent = 'Perform 1 more melee strike before becoming tired. Melee damage increased by 50%.'
+                break;
+            case 'si2':
+                pName.textContent = 'Executioner III'
+                pInfo.textContent = 'Perform 1 more melee strike before becoming tired.'
+                break;
+
+            // 3 First Column
+            case 'sj1':
+                pName.textContent = 'Shock Therapy'
+                pInfo.textContent = `You will not become fatigued when melee attacking zombies electrified by the Stun Gun.`
+                break;
+            case 'sj2':
+                pName.textContent = 'Samurai'
+                pInfo.textContent = 'Killing 15 zombies in rapid succession allows you to hit 1 more target per melee strike for 10 seconds.'
+                break;
+            case 'sj3':
+                pName.textContent = 'Bloodlust'
+                pInfo.textContent = 'Killing special zombies with a melee weapon will increase firearm damage by 100% for 15 seconds.'
+                break;
+            case 'sj4':
+                pName.textContent = `This Is Invigorating`
+                pInfo.textContent = `Signature Strikes damage 1 more target.`
+                break;
+
+            // 3 Second Column
+            case 'sk1':
+                pName.textContent = 'Spare Batteries'
+                pInfo.textContent = 'Max capacity for Stun Gun charges increased to 4 [base: 3 charges].'
+                break;
+            case 'sk2':
+                pName.textContent = 'Pickpocket'
+                pInfo.textContent = `Killing 15 zombies in rapid succession refills one equipment charge (cooldown 60 seconds).`
+                break;
+            case 'sk3':
+                pName.textContent = 'Loan Shark'
+                pInfo.textContent = 'Killing a special zombie gives a 50% chance to restore one charge to your equipment.'
+                break;
+            case 'sk4':
+                pName.textContent = `On One's Own`
+                pInfo.textContent = `One equipment charge gets restored for you every 60 seconds.`
+                break;
+
+            // 3 Third Column
+            case 'sl1':
+                pName.textContent = 'Flash Sale'
+                pInfo.textContent = `Using the Stun Gun restores 1% of your primary weapon's ammunition for every target you stun.`
+                break;
+            case 'sl2':
+                pName.textContent = 'Swapping Mags!'
+                pInfo.textContent = `SMGs' reload speed is increased by 25%.`
+                break;
+            case 'sl3':
+                pName.textContent = 'Adrenaline'
+                pInfo.textContent = 'Reload speed increased by 50% when health is below 35%.'
+                break;
+            case 'sl4':
+                pName.textContent = `Dead...Reward`
+                pInfo.textContent = `Killing 10 zombies in rapid succession with a melee weapon restores 5% of your primary weapon's ammunition.`
+                break;
+
+            // Fourth Set
+            case 'sm1':
+                pName.textContent = `Blade Master`
+                pInfo.textContent = 'Melee strikes damage 1 more target.'
+                break;
+            case 'sm2':
+                pName.textContent = 'Nimble II'
+                pInfo.textContent = 'Take 10% less damage while performing melee attacks.'
+                break;
+
+
+            // DIVISON CODE 
+            // First Set
+            case 'exa1':
+                pName.textContent = 'Firestarter'
+                pInfo.textContent = `Start with Molotov and Shotgun. You deal 25% more damage during swarm attacks.`
+                break;
+            case 'exa2':
+                pName.textContent = 'Wheatgrass II'
+                pInfo.textContent = 'Health increased by 5%.'
+                break;
+
+            // First Column
+            case 'exb1':
+                pName.textContent = 'Pyromaniac'
+                pInfo.textContent = `Molotov's fire damage increased by 50%.`
+                break;
+            case 'exb2':
+                pName.textContent = 'Hangover'
+                pInfo.textContent = 'Molotovs burn 75% longer.'
+                break;
+            case 'exb3':
+                pName.textContent = 'Crowd Control'
+                pInfo.textContent = 'Push radius from melee attacks increased by 50%.'
+                break;
+            case 'exb4':
+                pName.textContent = 'Minefield'
+                pInfo.textContent = 'The maximum number of Claymores is increased by 1, but they can kill 15% fewer targets. Start with a Claymore.'
+                break;
+
+            // Second Column
+            case 'exc1':
+                pName.textContent = 'Rage Mode'
+                pInfo.textContent = 'When pinned down by usual or special zombies you will automatically rise up and push your attackers back (cooldown 300 seconds).'
+                break;
+            case 'exc2':
+                pName.textContent = 'All Elbows'
+                pInfo.textContent = 'Movement speed penalty when zombies are very close reduced by 100%.'
+                break;
+            case 'exc3':
+                pName.textContent = `Rooted`
+                pInfo.textContent = 'You can never be pinned down by usual zombies (does not affect special zombies).'
+                break;
+            case 'exc4':
+                pName.textContent = 'Stop, Drop, And Roll'
+                pInfo.textContent = `When you become incapacitated, you ignite enemies around you.`
+                break;
+
+            // Third Column
+            case 'exd1':
+                pName.textContent = 'Dragon Hide'
+                pInfo.textContent = 'Fire resistance increased by 100%.'
+                break;
+            case 'exd2':
+                pName.textContent = 'Heavy Metal'
+                pInfo.textContent = 'Start with improved RPGL4 that deals 100% more damage. All RPGL4 pickups for you also improved.'
+                break;
+            case 'exd3':
+                pName.textContent = 'Heavy Metal II'
+                pInfo.textContent = `Start with improved Taiga-12 Heavy Assault Shotgun that deals 25% more damage, and has 25% more ammo. All Taiga-12 Heavy Assault Shotgun pickups for you also improved.`
+                break;
+            case 'exd4':
+                pName.textContent = `Big Bang`
+                pInfo.textContent = `Start with an improved Multi-shot Rocket Launcher that kills 50% more zombies. All MRL202 Commando pickups for you are also improved.`
+                break;
+
+            // Second Set
+            case 'exe1':
+                pName.textContent = 'Bandolier'
+                pInfo.textContent = 'Mortar and Stationary machinegun ammo capacity increased by 25% for all team. Durability of defenses increased by 25% for all team.'
+                break;
+            case 'exe2':
+                pName.textContent = 'Bullet Rain II'
+                pInfo.textContent = 'Shotgun and semi automatic weapons reload speed increased by 10%.'
+                break;
+
+            // 2 First Column
+            case 'exf1':
+                pName.textContent = 'Deep Pockets'
+                pInfo.textContent = 'Carried ammo capacity for primary and secondary weapons increased by 25%.'
+                break;
+            case 'exf2':
+                pName.textContent = 'Wheatgrass'
+                pInfo.textContent = 'Health increased by 25%.'
+                break;
+            case 'exf3':
+                pName.textContent = 'Rifleman'
+                pInfo.textContent = 'Start with ARK-103 Assault Rifle.'
+                break;
+            case 'exf4':
+                pName.textContent = 'S890'
+                pInfo.textContent = `Start with an S890 Combat Shotgun.`
+                break;
+
+            // 2 Second Column
+            case 'exg1':
+                pName.textContent = 'Green Fingered'
+                pInfo.textContent = `Your Claymores are rigged to explode only when there are at least 5 targets in the blast area. Start with Claymore.`
+                break;
+            case 'exg2':
+                pName.textContent = 'Fire Trap'
+                pInfo.textContent = 'Claymore explosions set fire to surrounding area. Start with Claymore.'
+                break;
+            case 'exg3':
+                pName.textContent = `Combat Engineer`
+                pInfo.textContent = '20% chance to restore an expended Defense Kit. (10% for Horde Mode).'
+                break;
+            case 'exg4':
+                pName.textContent = `Burnout`
+                pInfo.textContent = `During swarm attacks, fire damage is increased by 25%.`
+                break;
+
+            // 2 Third Column
+            case 'exh1':
+                pName.textContent = 'Second Wind'
+                pInfo.textContent = 'Instead of becoming incapacitated you will regain 25% health and keep going (cooldown 120 seconds).'
+                break;
+            case 'exh2':
+                pName.textContent = 'Job Satisfaction'
+                pInfo.textContent = 'Killing 15 zombies in rapid succession grants temporary health boost (cooldown 30 seconds).'
+                break;
+            case 'exh3':
+                pName.textContent = `Cloak And Dagger`
+                pInfo.textContent = `Killing 15 zombies in rapid succession grants masking effect for 3 seconds.`
+                break;
+            case 'exh4':
+                pName.textContent = 'Heavy Bone'
+                pInfo.textContent = `There is a chance that killing a special zombie will cause it to drop an MRL202 Commando (cooldown: 120 seconds).`
+                break;
+
+            // Third Set
+            case 'exi1':
+                pName.textContent = 'Hollywood II'
+                pInfo.textContent = 'Explosives and fire damage dealt to yourself and your teammates reduced by 50%.'
+                break;
+            case 'exi2':
+                pName.textContent = 'Know-How II'
+                pInfo.textContent = 'Molotovs and Claymores can kill 10% more targets.'
+                break;
+
+            // 3 First Column
+            case 'exj1':
+                pName.textContent = 'Broad Shoulders'
+                pInfo.textContent = `Heavy weapon ammo capacity increased by 25%.`
+                break;
+            case 'exj2':
+                pName.textContent = 'Bullet Rain'
+                pInfo.textContent = `All fully automatic weapons' reload speed increased by 25%.`
+                break;
+            case 'exj3':
+                pName.textContent = 'Third Hand'
+                pInfo.textContent = 'Killing 15 zombies in rapid succession instantly reloads your primary weapon.'
+                break;
+            case 'exj4':
+                pName.textContent = `Nimble Fingers`
+                pInfo.textContent = `Shotgun reload speed is increased by 25%.`
+                break;
+
+            // 3 Second Column
+            case 'exk1':
+                pName.textContent = 'Party At My Place'
+                pInfo.textContent = 'Maximum Molotov capacity increased to 3 and Claymore capacity to 4.'
+                break;
+            case 'exk2':
+                pName.textContent = 'Pickpocket'
+                pInfo.textContent = `Killing 15 zombies in rapid succession refills one equipment charge (cooldown 60 seconds).`
+                break;
+            case 'exk3':
+                pName.textContent = 'Pocket Factory'
+                pInfo.textContent = `You won't be able to pick equipment bags on the mission but your equipment will be constantly regenerating (150 seconds to replenish to maximum).`
+                break;
+            case 'exk4':
+                pName.textContent = `Impromptu`
+                pInfo.textContent = `Special zombies are stunned by the Molotov's splash.`
+                break;
+
+            // 3 Third Column
+            case 'exl1':
+                pName.textContent = 'Know-How'
+                pInfo.textContent = `Molotovs and Claymores can kill 25% more targets.`
+                break;
+            case 'exl2':
+                pName.textContent = 'Hot Sauce'
+                pInfo.textContent = `Molotov's splash damage increased by 100%.`
+                break;
+            case 'exl3':
+                pName.textContent = 'Ghost'
+                pInfo.textContent = 'Automatically receive masking effect if you are the last of your team still standing (does not apply if you are incapacitated or pinned).'
+                break;
+            case 'exl4':
+                pName.textContent = `Heavy Stride`
+                pInfo.textContent = `Claymore mines explode twice with a delay of 5 seconds, but each explosion can kill 15% fewer targets. Start with a Claymore.`
+                break;
+
+            // Fourth Set
+            case 'exm1':
+                pName.textContent = `Daredevil`
+                pInfo.textContent = 'When there are more than 30 zombies in the area, firearm damage is increased by 25% and number of melee strikes before becoming fatigued increased by 2.'
+                break;
+            case 'exm2':
+                pName.textContent = 'Deep Pocket II'
+                pInfo.textContent = 'Carried ammo capacity for primary weapons increased by 10%.'
+                break;
         }
     })
 })
