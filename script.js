@@ -1231,6 +1231,210 @@ perks.forEach(item => {
                 pName.textContent = 'Deep Pocket II'
                 pInfo.textContent = 'Carried ammo capacity for primary weapons increased by 10%.'
                 break;
+
+
+            // DIVISON CODE 
+            // First Set
+            case 'dma1':
+                pName.textContent = 'Flying Start'
+                pInfo.textContent = `Start with a Scout Rifle and Quadrocopter that will stun single zombies at short range. 12 shots per full charge but stunning a special zombie costs 5 shots.`
+                break;
+            case 'dma2':
+                pName.textContent = 'Ammo Drop'
+                pInfo.textContent = 'Person being followed regains 10% of primary ammo when Quadrocopter is depleted.'
+                break;
+
+            // First Column
+            case 'dmb1':
+                pName.textContent = 'Go The Distance'
+                pInfo.textContent = `Quadrocopter charge (the number of stun shots or kills the Quadrocopter can perform) is increased by 15%.`
+                break;
+            case 'dmb2':
+                pName.textContent = 'Take A Load Off'
+                pInfo.textContent = `Quadrocopter's charge increased by 30%, but you carry 20% less ammo for primary and secondary weapons.`
+                break;
+            case 'dmb3':
+                pName.textContent = 'Longshot'
+                pInfo.textContent = `Quadrocopter's attack range increased by 100% (base: 2 meters for stun gun, 15 meters for pistol).`
+                break;
+            case 'dmb4':
+                pName.textContent = 'Good Boy'
+                pInfo.textContent = `The Stun Gun of the Quadrocopter is replaced with a Stim Pistol. If the player doesn't have temporary health, the Quadrocopter shoots them with the Stim Pistol. Has 3 charges.`
+                break;
+
+            // Second Column
+            case 'dmc1':
+                pName.textContent = 'Silent Stinger'
+                pInfo.textContent = 'Your Quadrocopter will be equipped with a silenced pistol and will attack zombies in a 15 meter radius. 15 kills per full charge.'
+                break;
+            case 'dmc2':
+                pName.textContent = 'Firecracker'
+                pInfo.textContent = 'Your Quadrocopter will be equipped with an unsilenced pistol and will attack zombies in a 15 meter radius. Shot damage increased by 100%. 15 kills per full charge.'
+                break;
+            case 'dmc3':
+                pName.textContent = `Lighting Storm`
+                pInfo.textContent = `Your Quadrocopter's stun gun's fire rate is increased by 50%.`
+                break;
+            case 'dmc4':
+                pName.textContent = 'On a Bender'
+                pInfo.textContent = `Your Quadrocopter will be equipped with Frag Grenades and will drop them on large groups of enemies.`
+                break;
+
+            // Third Column
+            case 'dmd1':
+                pName.textContent = 'Overdrive'
+                pInfo.textContent = `Tapping "Use Equipment" button increases Quadrocopter's rate of fire by 100% for 6 seconds. It cannot be depleted during this time but will be depleted as soon as the effect is over.`
+                break;
+            case 'dmd2':
+                pName.textContent = 'Well Trained'
+                pInfo.textContent = 'Tapping "Use Equipment" button toggles active Quadrocopter between "follow" and "stationary" modes. Quadrocopter damage in stationary mode increased by 50% (applies to both stun gun and handgun versions).'
+                break;
+            case 'dmd3':
+                pName.textContent = 'The Big Five O'
+                pInfo.textContent = `Start with improved BF25 Payload Rifle that deals 50% more damage and has 50% more ammo. All BF25 Payload Rifle pickups for you also improved [base: 6 ammo].`
+                break;
+            case 'dmd4':
+                pName.textContent = `It's Alive`
+                pInfo.textContent = `Tapping the "Use Equipment" button activates all remaining charges of the Quadrocopter's Stim Pistol plus an additional one. After that, it will be depleted. Only works if the Quadrocopter is equipped with a Stim Pistol.`
+                break;
+
+            // Second Set
+            case 'dme1':
+                pName.textContent = 'Rechargeable'
+                pInfo.textContent = 'Active Quadrocopter will passively restore its charge by 1% per seconds after 5 seconds from its last shot.'
+                break;
+            case 'dme2':
+                pName.textContent = 'Unfettered'
+                pInfo.textContent = 'Movement speed penalty when zombies are very close reduced by 50% for person followed by your Quadrocopter.'
+                break;
+
+            // 2 First Column
+            case 'dmf1':
+                pName.textContent = 'Burst Pro'
+                pInfo.textContent = 'Reload speed of firearms with burst fire mode increased by 25%.'
+                break;
+            case 'dmf2':
+                pName.textContent = 'Wheatgrass'
+                pInfo.textContent = 'Health increased by 25%.'
+                break;
+            case 'dmf3':
+                pName.textContent = 'Weapon Of Choice'
+                pInfo.textContent = 'Start with Le Clairon Bullpup Rifle.'
+                break;
+            case 'dmf4':
+                pName.textContent = 'Scrap Metal... Again II'
+                pInfo.textContent = `All equipment bags within 20 meters will be automatically marked if you have no equipment charges.`
+                break;
+
+            // 2 Second Column
+            case 'dmg1':
+                pName.textContent = 'Backup Plan'
+                pInfo.textContent = `When you are grabbed, if you have no Quadrocopter following you but have one in your inventory, a Quadrocopter will automatically be launched (cooldown 180 seconds).`
+                break;
+            case 'dmg2':
+                pName.textContent = 'Parting Gift'
+                pInfo.textContent = `Receive small amount of temporary health when the Quadrocopter is depleted (applies to the person it's following).`
+                break;
+            case 'dmg3':
+                pName.textContent = `Saving Grace`
+                pInfo.textContent = 'If a player followed by a Quadrocopter is hit and about to be incapacitated, the Quadrocopter will grant a masking effect for 6 seconds (cooldown 180 seconds).'
+                break;
+            case 'dmg4':
+                pName.textContent = `Clear!`
+                pInfo.textContent = `If a player followed by a Quadrocopter is incapacitated, the Quadrocopter will revive them and get depleted (cooldown: 180 seconds).`
+                break;
+
+            // 2 Third Column
+            case 'dmh1':
+                pName.textContent = 'Pied Piper'
+                pInfo.textContent = `Holding "Use Equipment" button commands Quadrocopter to fly to the point you're aiming at. After it reaches that point it will attract zombies for 5 seconds and will then be depleted.`
+                break;
+            case 'dmh2':
+                pName.textContent = 'Sharing Is Caring'
+                pInfo.textContent = `Holding "Use Equipment" button commands Quadrocopter to follow a teammate you're aiming at. You must have a spare Quadrocopter and you can't have more than two Quadrocopters active at the same time.`
+                break;
+            case 'dmh3':
+                pName.textContent = `Coming In Hot`
+                pInfo.textContent = `Holding "Use Equipment" button commands Quadrocopter to fly to the point you're aiming at and explode there.`
+                break;
+            case 'dmh4':
+                pName.textContent = 'Seems He Fell Here'
+                pInfo.textContent = `There is a chance that killing a special zombie will cause it to drop an equipment bag (cooldown: 180 seconds).`
+                break;
+
+            // Third Set
+            case 'dmi1':
+                pName.textContent = 'Payload Power-Up'
+                pInfo.textContent = 'Quadrocopter equipped with stun gun can hit 2 targets per shot (base: 1) Each target hit carries a charge cost. Quadrocopter equipped with pistol deals 50% more damage.'
+                break;
+            case 'dmi2':
+                pName.textContent = 'Spotter'
+                pInfo.textContent = 'Firearm damage increased by 15% for person followed by your Quadrocopter.'
+                break;
+
+            // 3 First Column
+            case 'dmj1':
+                pName.textContent = 'Housekeeping'
+                pInfo.textContent = `Quadrocopter automatically defuses enemy landmines and captures hostile automatic turrets in 10 meters radius.`
+                break;
+            case 'dmj2':
+                pName.textContent = 'Keep It Down'
+                pInfo.textContent = `Active Quadrocopter will automatically target the Screamer if he's not killed within 20 seconds after his first scream. Quadrocopter will be depleted after the Screamer is dead.`
+                break;
+            case 'dmj3':
+                pName.textContent = 'Eye In The Sky'
+                pInfo.textContent = 'All active special zombies within a radius 14 meters around your Quadrocopter will be automatically marked.'
+                break;
+            case 'dmj4':
+                pName.textContent = `Splasher`
+                pInfo.textContent = `Your Quadrocopter automatically disinfects you if you get hit by the Infector's spit.`
+                break;
+
+            // 3 Second Column
+            case 'dmk1':
+                pName.textContent = 'Pocket Factory'
+                pInfo.textContent = `You won't be able to pick equipment bags on the mission but your equipment will be constantly regenerating (150 seconds to replenish to maximum).`
+                break;
+            case 'dmk2':
+                pName.textContent = 'Flight Of Fury'
+                pInfo.textContent = `Killing 15 zombies in rapid succession restores one Quadrocopter to your inventory (cooldown 180 seconds).`
+                break;
+            case 'dmk3':
+                pName.textContent = 'Special Prize'
+                pInfo.textContent = `Killing a special zombie restores one Quadrocopter to your inventory (cooldown 180 seconds).`
+                break;
+            case 'dmk4':
+                pName.textContent = `New Battery`
+                pInfo.textContent = `There is a 25% chance that the Quadrocopter's ability will not consume its charge.`
+                break;
+
+            // 3 Third Column
+            case 'dml1':
+                pName.textContent = 'Multitasking'
+                pInfo.textContent = `Automatically reload primary weapon on Quadrocopter launch.`
+                break;
+            case 'dml2':
+                pName.textContent = 'Not On My Watch'
+                pInfo.textContent = `Friendly fire taken is decreased by 100% for person followed by your Quadrocopter.`
+                break;
+            case 'dml3':
+                pName.textContent = 'Next Best Thing'
+                pInfo.textContent = 'Start with Geist 17MP machine pistol as secondary weapon.'
+                break;
+            case 'dml4':
+                pName.textContent = `Gathered My Thoughts`
+                pInfo.textContent = `The player followed by your Quadrocopter receives 25% more sprint stamina.`
+                break;
+
+            // Fourth Set
+            case 'dmm1':
+                pName.textContent = `Out With A Bang`
+                pInfo.textContent = 'Quadrocopter stuns up to 10 zombies in 5 meters radius when it is depleted (also applies for handgun version).'
+                break;
+            case 'dmm2':
+                pName.textContent = 'Guardian Angel'
+                pInfo.textContent = 'Person followed by your Quadrocopter will take 10% less damage.'
+                break;
         }
     })
 })
