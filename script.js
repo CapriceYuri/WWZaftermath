@@ -1435,6 +1435,210 @@ perks.forEach(item => {
                 pName.textContent = 'Guardian Angel'
                 pInfo.textContent = 'Person followed by your Quadrocopter will take 10% less damage.'
                 break;
+
+
+            // DIVISON CODE 
+            // First Set
+            case 'va1':
+                pName.textContent = 'Safeguard'
+                pInfo.textContent = `Start with Mobile Shield and M500 Shotgun. Take 100% less friendly fire damage while using Shield Charge or Blocking.`
+                break;
+            case 'va2':
+                pName.textContent = 'Peripheral Vision'
+                pInfo.textContent = 'Increase angle at which attacks will be blocked by your Shield by 10% (base: 220 deg).'
+                break;
+
+            // First Column
+            case 'vb1':
+                pName.textContent = 'Quick Hands'
+                pInfo.textContent = `Blocking zombie hit or performing Shield Charge reloads your primary and secondary weapons.`
+                break;
+            case 'vb2':
+                pName.textContent = 'Adrenaline Rush'
+                pInfo.textContent = `Blocking zombie hit or performing Shield Charge fully restores melee stamina.`
+                break;
+            case 'vb3':
+                pName.textContent = 'Fancy Footwork'
+                pInfo.textContent = `Better maneuverability when using Shield Charge and you can move 30% faster while blocking.`
+                break;
+            case 'vb4':
+                pName.textContent = 'Breakthrough!'
+                pInfo.textContent = `Hitting an enemy while using the Shield Charge will grant you 75% temporary health.`
+                break;
+
+            // Second Column
+            case 'vc1':
+                pName.textContent = 'Passive Aggression'
+                pInfo.textContent = 'Shield Block can withstand incoming hits for 3 more seconds (base: 5 seconds).'
+                break;
+            case 'vc2':
+                pName.textContent = 'All Round Defense'
+                pInfo.textContent = 'For the first 3 seconds Shield Block protects you from all directions.'
+                break;
+            case 'vc3':
+                pName.textContent = `Residual Defense`
+                pInfo.textContent = `Take 50% less damage from zombies for 3 seconds after Shield Block ends.`
+                break;
+            case 'vc4':
+                pName.textContent = 'Hoplite'
+                pInfo.textContent = `All teammates take 25% less damage if you hold the Shield Block within 5 meters of them.`
+                break;
+
+            // Third Column
+            case 'vd1':
+                pName.textContent = 'Conditioning'
+                pInfo.textContent = `You can perform 2 more Shield Charges per full shield energy (base: 2 charges).`
+                break;
+            case 'vd2':
+                pName.textContent = 'Recuperation'
+                pInfo.textContent = `You won't be able to collect equipment bags, but your Shield energy will constantly recharge (140 seconds to replenish to maximum).`
+                break;
+            case 'vd3':
+                pName.textContent = 'Pickpocket'
+                pInfo.textContent = `Killing 15 zombies in rapid succession refills one equipment charge (cooldown 30 seconds).`
+                break;
+            case 'vd4':
+                pName.textContent = `Tax Collector`
+                pInfo.textContent = `You refill 1 equipment charge for each special zombie hit during a shield charge (cooldown: 30 seconds).`
+                break;
+
+            // Second Set
+            case 've1':
+                pName.textContent = 'Armor Plated'
+                pInfo.textContent = 'You gain passive shield protection for 3 seconds when you start interacting with something (cooldown 10 sec).'
+                break;
+            case 've2':
+                pName.textContent = 'Steadfast'
+                pInfo.textContent = 'All zombie damage is reduced by 25% when using Shield Block.'
+                break;
+
+            // 2 First Column
+            case 'vf1':
+                pName.textContent = 'Stronger Together'
+                pInfo.textContent = 'Health for you and all teammates increased by 7.5%.'
+                break;
+            case 'vf2':
+                pName.textContent = 'Outer Shell'
+                pInfo.textContent = 'When your health is below 30% incoming damage depletes Shield energy before health. Full Shield energy prevents damage up to 50% of health.'
+                break;
+            case 'vf3':
+                pName.textContent = 'Juggernaut'
+                pInfo.textContent = 'Health increased by 35% but sprint stamina decreased by 50%.'
+                break;
+            case 'vf4':
+                pName.textContent = 'Guard Dog'
+                pInfo.textContent = `Start with an improved Forest Warrior Chainsaw that deals 50% more damage and has 50% more fuel. All Forest Warrior Chainsaw pickups for you are also improved.`
+                break;
+
+            // 2 Second Column
+            case 'vg1':
+                pName.textContent = 'Rolling Refill'
+                pInfo.textContent = `Passing near an Ammo Crate during a Shield Charge automatically refills your ammo.`
+                break;
+            case 'vg2':
+                pName.textContent = 'Magnet'
+                pInfo.textContent = `Restore 2% of primary weapon ammo for each enemy killed with a Shield Charge.`
+                break;
+            case 'vg3':
+                pName.textContent = `Supply Train`
+                pInfo.textContent = 'Passing near a teammate during a Shield Charge reloads their primary weapon. You receive 5% ammo for your primary weapon for each teammate reloaded.'
+                break;
+            case 'vg4':
+                pName.textContent = `Special Coating`
+                pInfo.textContent = `Passing near a teammate during a Shield Charge grants a 75% temporary health boost to them.`
+                break;
+
+            // 2 Third Column
+            case 'vh1':
+                pName.textContent = 'Freight Train'
+                pInfo.textContent = `You can kill 40% more zombies with a shield charge (base: 14 zombies).`
+                break;
+            case 'vh2':
+                pName.textContent = 'Shake It Off'
+                pInfo.textContent = `Performing a Shield Charge removes all negative effects received from special zombies.`
+                break;
+            case 'vh3':
+                pName.textContent = `Long Run`
+                pInfo.textContent = `Your Shield Charge speed and covered distance increased by 20%.`
+                break;
+            case 'vh4':
+                pName.textContent = 'Bad Odor II'
+                pInfo.textContent = `There is a chance that killing a special zombie will cause it to drop a primary weapon (cooldown: 180 seconds).`
+                break;
+
+            // Third Set
+            case 'vi1':
+                pName.textContent = 'On Your Feet'
+                pInfo.textContent = 'A single incapacitated teammate within 2 meters of where you finish a Shield Charge will get back up on their feet.'
+                break;
+            case 'vi2':
+                pName.textContent = 'Secret Stash'
+                pInfo.textContent = 'All zombie damage is reduced by 25% when using Shield Block.'
+                break;
+
+            // 3 First Column
+            case 'vj1':
+                pName.textContent = 'Elbow Room'
+                pInfo.textContent = `When you, or a teammate within 2 meters of you, starts reviving an incapacitated character, surrounding enemies will be pushed back (cooldown 60 seconds).`
+                break;
+            case 'vj2':
+                pName.textContent = 'Placebo Effect'
+                pInfo.textContent = `Heal 10% of max health when someone uses a medkit within 2 meters of you and you're not the target of healing.`
+                break;
+            case 'vj3':
+                pName.textContent = 'Inspirational'
+                pInfo.textContent = 'Killing 15 zombies in rapid succession while you are the only member of your team still standing respawns a randomly selected dead teammate (cooldown 60 seconds).'
+                break;
+            case 'vj4':
+                pName.textContent = `Risen From The Ashes`
+                pInfo.textContent = `When you become the last member of your team standing, you gain temporary health (cooldown: 60 seconds).`
+                break;
+
+            // 3 Second Column
+            case 'vk1':
+                pName.textContent = 'Sturdy'
+                pInfo.textContent = `When your Shield Block is completely expended, you gain a temporary health boost (cooldown 60 sec).`
+                break;
+            case 'vk2':
+                pName.textContent = 'Hurry Back'
+                pInfo.textContent = `Respawn time for the whole team decreased by 15%.`
+                break;
+            case 'vk3':
+                pName.textContent = 'Centre Of Attention'
+                pInfo.textContent = `Activating Shield Block will force all zombies within 3 meters in front of you to target you instead of your teammates.`
+                break;
+            case 'vk4':
+                pName.textContent = `Reinforced Metal`
+                pInfo.textContent = `The Shield Block reduces all damage by 5%.`
+                break;
+
+            // 3 Third Column
+            case 'vl1':
+                pName.textContent = 'Trial Blazer'
+                pInfo.textContent = `Finishing a Shield Charge sets enemies in front of you on fire (distance 2 meters).`
+                break;
+            case 'vl2':
+                pName.textContent = 'You Made Me Mad'
+                pInfo.textContent = `Melee attacks and firearms deal 50% more damage for 5 seconds after you holster the Shield.`
+                break;
+            case 'vl3':
+                pName.textContent = 'Avenger'
+                pInfo.textContent = 'Firearm damage increased by 20% for each dead or incapacitated teammate.'
+                break;
+            case 'vl4':
+                pName.textContent = `Revenge`
+                pInfo.textContent = `You take 5% less damage for each killed or incapacitated teammate.`
+                break;
+
+            // Fourth Set
+            case 'vm1':
+                pName.textContent = `Breathing Room`
+                pInfo.textContent = 'Automatically push back nearby zombies when you are hit and about to be incapacitated (cooldown 60 seconds).'
+                break;
+            case 'vm2':
+                pName.textContent = 'Linebacker'
+                pInfo.textContent = 'Shield Charge allows you to run for an additional 1 seconds (base: 5 seconds).'
+                break;
         }
     })
 })
