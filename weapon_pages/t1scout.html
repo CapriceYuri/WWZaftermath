@@ -8,8 +8,9 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous" defer></script>
-    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="style3.css"> 
     <script src="https://kit.fontawesome.com/852e8a85e4.js" crossorigin="anonymous" defer></script>
+    <script src="script3.js" defer></script>
 </head>
 
 <body>
@@ -65,60 +66,58 @@
     </div>
 
     <!-- WEAPON CONTENT -->
-    <div class="container">
-        <div class="row my-5">
-            <div class="col-md-6 col-12">
-                <div class="text-center"><img src="../images/t1-scout.jpeg" width="300px"></div>
+    <div class="d-flex flex-column gap-4 flex-md-row mx-5 p-5 py-md-5 align-items-center justify-content-center">
+        <div class="col-md-6 col-12 d-flex align-items-center justify-content-center">
+            <div class="text-center"><img src="../images/t1-scout.jpeg" width="300px"></div>
+        </div>
+        <div class="col-md-6 col-12">
+            <div class="d-flex justify-content-between">
+                <div class="text-white">Power</div>
+                <div class="text-white power-value">5</div>
             </div>
-            <div class="col-md-6 col-12">
-                <div class="d-flex justify-content-between">
-                    <div class="text-white">Power</div>
-                    <div class="text-white">5</div>
-                </div>
-                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 20px;">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary text-warning" style="width: 50%"></div>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <div class="text-white">Accuracy</div>
-                    <div class="text-white">8</div>
-                </div>
-                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 20px;">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary text-warning" style="width: 80%"></div>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <div class="text-white">Handling</div>
-                    <div class="text-white">6</div>
-                </div>
-                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 20px;">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary text-warning" style="width: 60%"></div>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <div class="text-white">Fire Rate</div>
-                    <div class="text-white">3</div>
-                </div>
-                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 20px;">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary text-warning" style="width: 30%"></div>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <div class="text-white">Max Penetration</div>
-                    <div class="text-white">1</div>
-                </div>
-                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 20px;">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary text-warning" style="width: 50%"></div>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <div class="text-white">Magazine</div>
-                    <div class="text-white">30</div>
-                </div>
-                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 20px;">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary text-warning" style="width: 100%"></div>
-                </div>
+            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 20px;">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary text-warning" style="width: 50%"></div>
+            </div>
+            <div class="d-flex justify-content-between">
+                <div class="text-white">Accuracy</div>
+                <div class="text-white">8</div>
+            </div>
+            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 20px;">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary text-warning" style="width: 80%"></div>
+            </div>
+            <div class="d-flex justify-content-between">
+                <div class="text-white">Handling</div>
+                <div class="text-white">6</div>
+            </div>
+            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 20px;">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary text-warning" style="width: 60%"></div>
+            </div>
+            <div class="d-flex justify-content-between">
+                <div class="text-white">Fire Rate</div>
+                <div class="text-white">3</div>
+            </div>
+            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 20px;">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary text-warning" style="width: 30%"></div>
+            </div>
+            <div class="d-flex justify-content-between">
+                <div class="text-white">Max Penetration</div>
+                <div class="text-white">1</div>
+            </div>
+            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 20px;">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary text-warning" style="width: 50%"></div>
+            </div>
+            <div class="d-flex justify-content-between">
+                <div class="text-white">Magazine</div>
+                <div class="text-white">30</div>
+            </div>
+            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 20px;">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary text-warning" style="width: 100%"></div>
             </div>
         </div>
     </div>
 
     <!-- CODE DIVISION -->
-    <div class="container mt-5 weapon-perk">
+    <!-- <div class="container mt-5 weapon-perk">
         <div class="row text-center">
             <div class="col-lg-6 col-12">
                 <div class="row my-5">
@@ -142,7 +141,89 @@
                 </div>
             </div>
         </div>
+    </div> -->
+
+    <div class="d-flex flex-column flex-md-row p-4 gap-4 py-md-3 align-items-center justify-content-center align-items-md-start">
+
+        <div class="list-group">
+
+            <label class="list-group-item list-group-item-danger d-flex gap-2">
+                <input class="btn" type="radio" name="uniquePerk">
+                <div>Wolf Pack
+                    <small class="d-block text-body-secondary">+10% Damage per teammate carrying a weapon with the same perk (including yourself, up to 40%).</small>
+                </div>
+            </label>
+
+            <label class="list-group-item list-group-item-danger d-flex gap-2">
+                <input class="btn" type="radio" name="uniquePerk">
+                <div>Veteran II
+                    <small class="d-block text-body-secondary">+25% Reloading speed. The reloading speed bonus is stackable but can't be higher than 50%.</small>
+                </div>
+            </label>
+
+            <label class="list-group-item list-group-item-danger d-flex gap-2">
+                <input class="btn" type="radio" name="uniquePerk">
+                <div>Sweet Leftovers
+                    <small class="d-block text-body-secondary">+25% Damage while you have less than 50% ammo left for this weapon.</small>
+                </div>
+            </label>
+
+            <label class="list-group-item list-group-item-danger d-flex gap-2">
+                <input class="btn" type="radio" name="uniquePerk">
+                <div>Brain Buster
+                    <small class="d-block text-body-secondary">Headshots from this weapon increase damage by 15% and reduce spread for the next shot.</small>
+                </div>
+            </label>
+
+        </div>
+
+        <div class="list-group">
+
+            <label class="list-group-item list-group-item-warning d-flex gap-2">
+                <input class="btn" type="checkbox" name="commonPerk">
+                <div>Custom Mag II
+                    <small class="d-block text-body-secondary">+10 Magazine capacity, -1 Handling.</small>
+                </div>
+            </label>
+            <label class="list-group-item list-group-item-warning d-flex gap-2">
+                <input class="btn" type="checkbox" name="commonPerk">
+                <div>Custom Rounds I
+                    <small class="d-block text-body-secondary">+1 Accuracy, +30% Efficient range.</small>
+                </div>
+            </label>
+            <label class="list-group-item list-group-item-warning d-flex gap-2">
+                <input class="btn" type="checkbox" name="commonPerk">
+                <div>Custom Barrel
+                    <small class="d-block text-body-secondary">	+1 Accuracy, +10% Damage.</small>
+                </div>
+            </label>
+            <label class="list-group-item list-group-item-warning d-flex gap-2">
+                <input class="btn" type="checkbox" name="commonPerk">
+                <div>Ergonomics II
+                    <small class="d-block text-body-secondary">+2 Handling, -10% Reloading speed.</small>
+                </div>
+            </label>
+            <label class="list-group-item list-group-item-warning d-flex gap-2">
+                <input class="btn" type="checkbox" name="commonPerk">
+                <div>Fine Motor Skills I
+                    <small class="d-block text-body-secondary">+25% Weapon switching speed.</small>
+                </div>
+            </label>
+            <label class="list-group-item list-group-item-warning d-flex gap-2">
+                <input class="btn" type="checkbox" name="commonPerk">
+                <div>Bounty Hunter
+                    <small class="d-block text-body-secondary">+15% Damage to special zombies.</small>
+                </div>
+            </label>
+            <label class="list-group-item list-group-item-warning d-flex gap-2">
+                <input class="btn" type="checkbox" name="commonPerk">
+                <div>Ammo Pouches
+                    <small class="d-block text-body-secondary">+10% Max ammo.</small>
+                </div>
+            </label>
+        </div>
     </div>
+
 
 </body>
 
