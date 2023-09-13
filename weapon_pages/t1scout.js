@@ -48,21 +48,24 @@ let nod4App = false
 function convertToPercent(num) {
     return `${num}%`
 }
-
+let tempV;
+let tempB
 
 // For Radio Button
 chooseRadio.forEach(radio => {
     radio.addEventListener('change', () => {
         if (wolfpack.checked) {
-            currentPower += 1;
-            currentPowerBar = convertToPercent(parseInt(currentPowerBar) + 10)
-            powerV.textContent = currentPower;
+            tempV = (currentPower/10)
+            currentPower += (currentPower/10);
+            tempB = (parseInt(currentPowerBar)/10);
+            currentPowerBar = convertToPercent(parseInt(currentPowerBar) + (parseInt(currentPowerBar)/10) )
+            powerV.textContent = Math.floor(currentPower);
             powerBar.style.width = currentPowerBar;
             codeApp = true;
         } else if (codeApp && !wolfpack.checked) {
-            currentPower -= 1;
-            currentPowerBar = convertToPercent(parseInt(currentPowerBar) - 10)
-            powerV.textContent = currentPower;
+            currentPower -= tempV;
+            currentPowerBar = convertToPercent(parseInt(currentPowerBar) - tempB)
+            powerV.textContent = Math.floor(currentPower);
             powerBar.style.width = currentPowerBar;
             codeApp = false;
         }
@@ -128,9 +131,9 @@ nod3.addEventListener('change', () => {
         currentAccBar = convertToPercent(parseInt(currentAccBar) + 10);
         accV.textContent = currentAcc;
         accBar.style.width = currentAccBar;
-        currentPower = Math.floor(currentPower+(currentPower/10));
-        testing = currentPower+(currentPower/10)
-        currentPowerBar = convertToPercent(parseInt(currentPowerBar) + ( (parseInt(currentPowerBar))/10 ));
+        currentPower = Math.floor(currentPower + (currentPower / 10));
+        testing = currentPower + (currentPower / 10)
+        currentPowerBar = convertToPercent(parseInt(currentPowerBar) + ((parseInt(currentPowerBar)) / 10));
         powerV.textContent = currentPower;
         powerBar.style.width = currentPowerBar;
         nod3App = true;
@@ -139,8 +142,8 @@ nod3.addEventListener('change', () => {
         currentAccBar = convertToPercent(parseInt(currentAccBar) - 10);
         accV.textContent = currentAcc;
         accBar.style.width = currentAccBar;
-        currentPower = Math.ceil(currentPower-(currentPower/10));
-        currentPowerBar = convertToPercent(parseInt(currentPowerBar) - ( (parseInt(currentPowerBar))/10 ));
+        currentPower = Math.ceil(currentPower - (currentPower / 10));
+        currentPowerBar = convertToPercent(parseInt(currentPowerBar) - ((parseInt(currentPowerBar)) / 10));
         powerV.textContent = currentPower;
         powerBar.style.width = currentPowerBar;
         nod3App = false;
@@ -153,7 +156,7 @@ nod4.addEventListener('change', () => {
         currentHandBar = convertToPercent(parseInt(currentHandBar) + 20)
         handV.textContent = currentHand;
         handBar.style.width = currentHandBar;
-        nod4App =  true;
+        nod4App = true;
     } else if (nod4App && !nod4.checked) {
         currentHand -= 2;
         currentHandBar = convertToPercent(parseInt(currentHandBar) - 20)
