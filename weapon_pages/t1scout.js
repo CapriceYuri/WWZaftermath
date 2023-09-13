@@ -5,6 +5,7 @@ const nod1 = document.getElementById('nod1');
 const nod2 = document.getElementById('nod2');
 const nod3 = document.getElementById('nod3');
 const nod4 = document.getElementById('nod4');
+const wolfpack = document.getElementById('wolfpack')
 const snakebite = document.getElementById('snakebite')
 
 
@@ -52,22 +53,21 @@ function convertToPercent(num) {
 // For Radio Button
 chooseRadio.forEach(radio => {
     radio.addEventListener('change', () => {
-        if (snakebite.checked) {
-            currentRate += 3;
-            currentRateBar = convertToPercent(parseInt(currentRateBar) + 30)
-            rateV.textContent = currentRate;
-            rateBar.style.width = currentRateBar;
+        if (wolfpack.checked) {
+            currentPower += 1;
+            currentPowerBar = convertToPercent(parseInt(currentPowerBar) + 10)
+            powerV.textContent = currentPower;
+            powerBar.style.width = currentPowerBar;
             codeApp = true;
-        } else if (codeApp && !snakebite.checked) {
-            currentRate -= 3;
-            currentRateBar = convertToPercent(parseInt(currentRateBar) - 30)
-            rateV.textContent = currentRate;
-            rateBar.style.width = currentRateBar;
+        } else if (codeApp && !wolfpack.checked) {
+            currentPower -= 1;
+            currentPowerBar = convertToPercent(parseInt(currentPowerBar) - 10)
+            powerV.textContent = currentPower;
+            powerBar.style.width = currentPowerBar;
             codeApp = false;
         }
     })
 })
-
 
 
 // For Checkboxes
@@ -88,26 +88,34 @@ checkBox.forEach(box => {
 
 nod1.addEventListener('change', () => {
     if (nod1.checked) {
-        currentMag += 4;
+        currentMag += 10;
         magV.textContent = currentMag;
+        currentHand -= 1;
+        currentHandBar = convertToPercent(parseInt(currentHandBar) - 10)
+        handV.textContent = currentHand;
+        handBar.style.width = currentHandBar
         nod1App = true;
     } else if (nod1App && !nod1.checked) {
-        currentMag -= 4;
+        currentMag -= 10;
         magV.textContent = currentMag;
+        currentHand += 1;
+        currentHandBar = convertToPercent(parseInt(currentHandBar) + 10)
+        handV.textContent = currentHand;
+        handBar.style.width = currentHandBar
         nod1App = false
     }
 })
 
 nod2.addEventListener('change', () => {
     if (nod2.checked) {
-        currentAcc += 2;
-        currentAccBar = convertToPercent(parseInt(currentAccBar) + 20);
+        currentAcc += 1;
+        currentAccBar = convertToPercent(parseInt(currentAccBar) + 10);
         accV.textContent = currentAcc;
         accBar.style.width = currentAccBar;
         nod2App = true;
     } else if (nod2App && !nod2.checked) {
-        currentAcc -= 2;
-        currentAccBar = convertToPercent(parseInt(currentAccBar) - 20);
+        currentAcc -= 1;
+        currentAccBar = convertToPercent(parseInt(currentAccBar) - 10);
         accV.textContent = currentAcc;
         accBar.style.width = currentAccBar;
         nod2App = false
@@ -116,22 +124,23 @@ nod2.addEventListener('change', () => {
 
 nod3.addEventListener('change', () => {
     if (nod3.checked) {
-        currentHand += 2;
-        currentHandBar = convertToPercent(parseInt(currentHandBar) + 20);
-        handV.textContent = currentHand;
-        handBar.style.width = currentHandBar;
-        currentPower += 1.5;
-        currentPowerBar = convertToPercent(parseInt(currentPowerBar) + 15);
+        currentAcc += 1;
+        currentAccBar = convertToPercent(parseInt(currentAccBar) + 10);
+        accV.textContent = currentAcc;
+        accBar.style.width = currentAccBar;
+        currentPower = Math.floor(currentPower+(currentPower/10));
+        testing = currentPower+(currentPower/10)
+        currentPowerBar = convertToPercent(parseInt(currentPowerBar) + ( (parseInt(currentPowerBar))/10 ));
         powerV.textContent = currentPower;
         powerBar.style.width = currentPowerBar;
         nod3App = true;
     } else if (nod3App && !nod3.checked) {
-        currentHand -= 2;
-        currentHandBar = convertToPercent(parseInt(currentHandBar) - 20);
-        handV.textContent = currentHand;
-        handBar.style.width = currentHandBar;
-        currentPower -= 1.5;
-        currentPowerBar = convertToPercent(parseInt(currentPowerBar) - 15);
+        currentAcc -= 1;
+        currentAccBar = convertToPercent(parseInt(currentAccBar) - 10);
+        accV.textContent = currentAcc;
+        accBar.style.width = currentAccBar;
+        currentPower = Math.ceil(currentPower-(currentPower/10));
+        currentPowerBar = convertToPercent(parseInt(currentPowerBar) - ( (parseInt(currentPowerBar))/10 ));
         powerV.textContent = currentPower;
         powerBar.style.width = currentPowerBar;
         nod3App = false;
@@ -140,16 +149,16 @@ nod3.addEventListener('change', () => {
 
 nod4.addEventListener('change', () => {
     if (nod4.checked) {
-        currentPower += 1;
-        currentPowerBar = convertToPercent(parseInt(currentPowerBar) + 10)
-        powerV.textContent = currentPower;
-        powerBar.style.width = currentPowerBar;
+        currentHand += 2;
+        currentHandBar = convertToPercent(parseInt(currentHandBar) + 20)
+        handV.textContent = currentHand;
+        handBar.style.width = currentHandBar;
         nod4App =  true;
     } else if (nod4App && !nod4.checked) {
-        currentPower -= 1;
-        currentPowerBar = convertToPercent(parseInt(currentPowerBar) - 10)
-        powerV.textContent = currentPower;
-        powerBar.style.width = currentPowerBar;
+        currentHand -= 2;
+        currentHandBar = convertToPercent(parseInt(currentHandBar) - 20)
+        handV.textContent = currentHand;
+        handBar.style.width = currentHandBar;
         nod4App = false;
     }
 })
