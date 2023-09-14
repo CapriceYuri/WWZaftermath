@@ -48,26 +48,40 @@ let nod4App = false
 function convertToPercent(num) {
     return `${num}%`
 }
+function addPercent(total, percent) {
+    let temp = total / 100;
+    return percent * temp;
+}
+
 let tempV;
-let tempB
+let tempB;
+let cTempV;
+let cTempB;
 
 // For Radio Button
 chooseRadio.forEach(radio => {
     radio.addEventListener('change', () => {
         if (wolfpack.checked) {
-            tempV = (currentPower/10)
-            currentPower += (currentPower/10);
-            tempB = (parseInt(currentPowerBar)/10);
-            currentPowerBar = convertToPercent(parseInt(currentPowerBar) + (parseInt(currentPowerBar)/10) )
-            powerV.textContent = Math.floor(currentPower);
+            tempV = addPercent(currentPower, 10)
+            currentPowerBar = convertToPercent(parseInt(currentPowerBar) + (addPercent(currentPower, 10) * 10))
+            currentPower += addPercent(currentPower, 10);
+            powerV.textContent = Math.trunc(currentPower)
             powerBar.style.width = currentPowerBar;
             codeApp = true;
+
+            console.log(currentPowerBar)
+            console.log(currentPower)
+            console.log(tempV)
         } else if (codeApp && !wolfpack.checked) {
+            currentPowerBar = convertToPercent(parseInt(currentPowerBar) - (tempV * 10));
             currentPower -= tempV;
-            currentPowerBar = convertToPercent(parseInt(currentPowerBar) - tempB)
-            powerV.textContent = Math.floor(currentPower);
+            powerV.textContent = Math.trunc(currentPower)
             powerBar.style.width = currentPowerBar;
             codeApp = false;
+
+            console.log(currentPowerBar)
+            console.log(currentPower)
+            console.log(tempV)
         }
     })
 })
@@ -98,6 +112,8 @@ nod1.addEventListener('change', () => {
         handV.textContent = currentHand;
         handBar.style.width = currentHandBar
         nod1App = true;
+        console.log(currentPower)
+        console.log(currentPowerBar)
     } else if (nod1App && !nod1.checked) {
         currentMag -= 10;
         magV.textContent = currentMag;
@@ -106,6 +122,8 @@ nod1.addEventListener('change', () => {
         handV.textContent = currentHand;
         handBar.style.width = currentHandBar
         nod1App = false
+        console.log(currentPower)
+        console.log(currentPowerBar)
     }
 })
 
@@ -131,22 +149,33 @@ nod3.addEventListener('change', () => {
         currentAccBar = convertToPercent(parseInt(currentAccBar) + 10);
         accV.textContent = currentAcc;
         accBar.style.width = currentAccBar;
-        currentPower = Math.floor(currentPower + (currentPower / 10));
-        testing = currentPower + (currentPower / 10)
-        currentPowerBar = convertToPercent(parseInt(currentPowerBar) + ((parseInt(currentPowerBar)) / 10));
-        powerV.textContent = currentPower;
+
+        cTempV = addPercent(currentPower, 10)
+        currentPowerBar = convertToPercent(parseInt(currentPowerBar) + (addPercent(currentPower, 10) * 10))
+        currentPower += addPercent(currentPower, 10);
+        powerV.textContent = Math.trunc(currentPower)
         powerBar.style.width = currentPowerBar;
         nod3App = true;
+
+        console.log(currentPower)
+        console.log(currentPowerBar)
+        console.log(cTempV)
+
     } else if (nod3App && !nod3.checked) {
         currentAcc -= 1;
         currentAccBar = convertToPercent(parseInt(currentAccBar) - 10);
         accV.textContent = currentAcc;
         accBar.style.width = currentAccBar;
-        currentPower = Math.ceil(currentPower - (currentPower / 10));
-        currentPowerBar = convertToPercent(parseInt(currentPowerBar) - ((parseInt(currentPowerBar)) / 10));
-        powerV.textContent = currentPower;
+        currentPowerBar = convertToPercent(parseInt(currentPowerBar) - (cTempV * 10));
+        console.log(currentPowerBar)
+        currentPower -= cTempV;
+        powerV.textContent = Math.trunc(currentPower)
         powerBar.style.width = currentPowerBar;
         nod3App = false;
+
+        console.log(currentPower)
+        console.log(currentPowerBar)
+        console.log(cTempV)
     }
 })
 
