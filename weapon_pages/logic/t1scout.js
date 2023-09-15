@@ -62,13 +62,13 @@ let cTempB;
 chooseRadio.forEach(radio => {
     radio.addEventListener('change', () => {
         if (wolfpack.checked) {
-            tempV = addPercent(currentPower, 10)
-            currentPowerBar = convertToPercent(parseInt(currentPowerBar) + (addPercent(currentPower, 10) * 10))
-            currentPower += addPercent(currentPower, 10);
+            tempV = addPercent(5, 10)
+            currentPowerBar = convertToPercent(parseInt(currentPowerBar) + (tempV * 10))
+            currentPower += tempV;
             powerV.textContent = Math.trunc(currentPower)
             powerBar.style.width = currentPowerBar;
+            
             codeApp = true;
-
             console.log(currentPowerBar)
             console.log(currentPower)
             console.log(tempV)
@@ -78,7 +78,6 @@ chooseRadio.forEach(radio => {
             powerV.textContent = Math.trunc(currentPower)
             powerBar.style.width = currentPowerBar;
             codeApp = false;
-
             console.log(currentPowerBar)
             console.log(currentPower)
             console.log(tempV)
@@ -150,13 +149,12 @@ nod3.addEventListener('change', () => {
         accV.textContent = currentAcc;
         accBar.style.width = currentAccBar;
 
-        cTempV = addPercent(currentPower, 10)
-        currentPowerBar = convertToPercent(parseInt(currentPowerBar) + (addPercent(currentPower, 10) * 10))
-        currentPower += addPercent(currentPower, 10);
+        cTempV = addPercent(5, 10)
+        currentPowerBar = convertToPercent(parseInt(currentPowerBar) + (cTempV * 10))
+        currentPower += cTempV;
         powerV.textContent = Math.trunc(currentPower)
         powerBar.style.width = currentPowerBar;
         nod3App = true;
-
         console.log(currentPower)
         console.log(currentPowerBar)
         console.log(cTempV)
@@ -172,7 +170,6 @@ nod3.addEventListener('change', () => {
         powerV.textContent = Math.trunc(currentPower)
         powerBar.style.width = currentPowerBar;
         nod3App = false;
-
         console.log(currentPower)
         console.log(currentPowerBar)
         console.log(cTempV)
