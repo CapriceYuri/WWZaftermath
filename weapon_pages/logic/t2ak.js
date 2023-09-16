@@ -22,17 +22,17 @@ let penBar = document.querySelector('.pen-bar')
 let magV = document.querySelector('.mag-value')
 let magBar = document.querySelector('.mag-bar')
 
-let currentPower = parseInt(powerV.textContent)
+let currentPower = parseFloat(powerV.textContent)
 let currentPowerBar = powerBar.style.width;
-let currentAcc = parseInt(accV.textContent)
+let currentAcc = parseFloat(accV.textContent)
 let currentAccBar = accBar.style.width;
-let currentHand = parseInt(handV.textContent)
+let currentHand = parseFloat(handV.textContent)
 let currentHandBar = handBar.style.width;
-let currentRate = parseInt(rateV.textContent)
+let currentRate = parseFloat(rateV.textContent)
 let currentRateBar = rateBar.style.width;
-let currentPen = parseInt(penV.textContent)
+let currentPen = parseFloat(penV.textContent)
 let currentPenBar = penBar.style.width;
-let currentMag = parseInt(magV.textContent)
+let currentMag = parseFloat(magV.textContent)
 let currentMagBar = magBar.style.width;
 
 // console.log(checkBox)
@@ -63,12 +63,12 @@ let cTempB2;
 //     radio.addEventListener('change', () => {
 //         if (fmjRound2.checked) {
 //             currentAcc += 2
-//             currentAccBar = convertToPercent(parseInt(currentAccBar) + 20)
+//             currentAccBar = convertToPercent(parseFloat(currentAccBar) + 20)
 //             accV.textContent = currentAcc;
 //             accBar.style.width = currentAccBar;
 
 //             currentPen += 2;
-//             currentPenBar = convertToPercent(parseInt(currentPenBar) + 100)
+//             currentPenBar = convertToPercent(parseFloat(currentPenBar) + 100)
 //             penV.textContent = currentPen;
 //             penBar.style.width = currentPenBar;
 
@@ -78,12 +78,12 @@ let cTempB2;
 //             codeApp = true;
 //         } else if (codeApp && !fmjRound2.checked) {
 //             currentAcc -= 2
-//             currentAccBar = convertToPercent(parseInt(currentAccBar) - 20)
+//             currentAccBar = convertToPercent(parseFloat(currentAccBar) - 20)
 //             accV.textContent = currentAcc;
 //             accBar.style.width = currentAccBar;
 
 //             currentPen -= 2;
-//             currentPenBar = convertToPercent(parseInt(currentPenBar) - 100)
+//             currentPenBar = convertToPercent(parseFloat(currentPenBar) - 100)
 //             penV.textContent = currentPen;
 //             penBar.style.width = currentPenBar;
 
@@ -115,11 +115,11 @@ checkBox.forEach(box => {
 
 nod1.addEventListener('change', () => {
     if (nod1.checked) {
-        currentMag += 3;
+        currentMag += 5;
         magV.textContent = currentMag;
         nod1App = true;
     } else if (nod1App && !nod1.checked) {
-        currentMag -= 3;
+        currentMag -= 5;
         magV.textContent = currentMag;
         nod1App = false
     }
@@ -127,27 +127,36 @@ nod1.addEventListener('change', () => {
 
 nod2.addEventListener('change', () => {
     if (nod2.checked) {
-        currentMag += 6;
-        magV.textContent = currentMag;
+        currentAcc += 2;
+        currentAccBar = convertToPercent(parseFloat(currentAccBar) + 20)
+        accV.textContent = currentAcc;
+        accBar.style.width = currentAccBar;
 
-        cTempV1 = addPercent(6, 20) * 10
+        cTempV1 = addPercent(7, 15) * 10
 
         currentPower = (((currentPower * 10) - (cTempV1)) / 10)
-        currentPowerBar = convertToPercent(parseInt(currentPowerBar) - (cTempV1))
+        currentPowerBar = convertToPercent(parseFloat(currentPowerBar) - (cTempV1))
         powerV.textContent = Math.trunc(currentPower);
         powerBar.style.width = currentPowerBar;
         console.log(currentPower)
+        console.log(currentPowerBar)
+        console.log(cTempV1)
+
 
         nod2App = true;
     } else if (nod2App && !nod2.checked) {
-        currentMag -= 6;
-        magV.textContent = currentMag;
+        currentAcc -= 2;
+        currentAccBar = convertToPercent(parseFloat(currentAccBar) - 20)
+        accV.textContent = currentAcc;
+        accBar.style.width = currentAccBar;
 
         currentPower = (((currentPower * 10) + (cTempV1)) / 10)
-        currentPowerBar = convertToPercent(parseInt(currentPowerBar) + (cTempV1))
+        currentPowerBar = convertToPercent(parseFloat(currentPowerBar) + (cTempV1))
         powerV.textContent = Math.trunc(currentPower);
         powerBar.style.width = currentPowerBar;
         console.log(currentPower)
+        console.log(currentPowerBar)
+
 
 
         nod2App = false
@@ -156,32 +165,34 @@ nod2.addEventListener('change', () => {
 
 nod3.addEventListener('change', () => {
     if (nod3.checked) {
-        cTempV2 = addPercent(6, 15) * 10
-        currentPower = (((currentPower * 10) - (cTempV2)) / 10)
-        currentPowerBar = convertToPercent(parseInt(currentPowerBar) - (cTempV2))
+        cTempV2 = addPercent(7, 10) * 10
+
+        currentPower = (((currentPower * 10) + (cTempV2)) / 10)
+        currentPowerBar = convertToPercent(parseFloat(currentPowerBar) + (cTempV2))
         powerV.textContent = Math.trunc(currentPower);
         powerBar.style.width = currentPowerBar;
         console.log(currentPower)
         console.log(currentPowerBar)
 
-        currentAcc += 2;
-        currentAccBar = convertToPercent(parseInt(currentAccBar) + 20)
-        accV.textContent = currentAcc;
-        accBar.style.width = currentAccBar;
+        currentHand += 1;
+        currentHandBar = convertToPercent(parseFloat(currentHandBar) + 10)
+        handV.textContent = currentHand;
+        handBar.style.width = currentHandBar;
 
         nod3App = true;
     } else if (nod3App && !nod3.checked) {
-        currentPower = (((currentPower * 10) + (cTempV2)) / 10)
-        currentPowerBar = convertToPercent(parseInt(currentPowerBar) + (cTempV2))
+        currentPower = (((currentPower * 10) - (cTempV2)) / 10)
+        currentPowerBar = convertToPercent(parseFloat(currentPowerBar) - (cTempV2))
         powerV.textContent = Math.trunc(currentPower);
         powerBar.style.width = currentPowerBar;
         console.log(currentPower)
-        
+        console.log(currentPowerBar)
 
-        currentAcc -= 2;
-        currentAccBar = convertToPercent(parseInt(currentAccBar) - 20)
-        accV.textContent = currentAcc;
-        accBar.style.width = currentAccBar;
+
+        currentHand -= 1;
+        currentHandBar = convertToPercent(parseFloat(currentHandBar) - 10)
+        handV.textContent = currentHand;
+        handBar.style.width = currentHandBar;
 
         nod3App = false;
     }
@@ -189,19 +200,14 @@ nod3.addEventListener('change', () => {
 
 nod4.addEventListener('change', () => {
     if (nod4.checked) {
-        currentHandBar = convertToPercent(parseInt(currentHandBar) + 20)
+        currentHandBar = convertToPercent(parseFloat(currentHandBar) + 20)
         currentHand += 2;
         handV.textContent = Math.trunc(currentHand)
         handBar.style.width = currentHandBar;
 
-        currentAccBar = convertToPercent(parseInt(currentAccBar) + 20)
-        currentAcc += 2;
-        accV.textContent = Math.trunc(currentAcc)
-        accBar.style.width = currentAccBar;
-
         nod4App = true;
     } else if (nod4App && !nod4.checked) {
-        currentHandBar = convertToPercent(parseInt(currentHandBar) - 20)
+        currentHandBar = convertToPercent(parseFloat(currentHandBar) - 20)
         currentHand -= 2;
         handV.textContent = Math.trunc(currentHand)
         handBar.style.width = currentHandBar;
@@ -213,23 +219,28 @@ nod4.addEventListener('change', () => {
 
 nod5.addEventListener('change', () => {
     if (nod5.checked) {
-        cTempB1 = (addPercent(6, 15) * 10);
-        console.log(cTempB1)
+        cTempB1 = (addPercent(7, 15) * 10)
+
         currentPower = (((currentPower * 10) + (cTempB1)) / 10)
-        console.log(currentPower)
-        currentPowerBar = convertToPercent(parseInt(currentPowerBar) + (cTempB1))
+        currentPowerBar = convertToPercent(parseFloat(currentPowerBar) + (cTempB1))
         powerV.textContent = Math.trunc(currentPower);
         powerBar.style.width = currentPowerBar;
+        console.log(currentPower)
+        console.log(currentPowerBar)
+        console.log(cTempB1)
+
         nod5App = true;
     } else if (nod5App && !nod4.checked) {
         currentPower = (((currentPower * 10) - (cTempB1)) / 10)
-        currentPowerBar = convertToPercent(parseInt(currentPowerBar) - (cTempB1))
+        currentPowerBar = convertToPercent(parseFloat(currentPowerBar) - (cTempB1))
         powerV.textContent = Math.trunc(currentPower);
         powerBar.style.width = currentPowerBar;
+
         console.log(currentPower)
-        console.log(cTempB1)
+        console.log(currentPowerBar)
 
         nod5App = false;
 
     }
 })
+
