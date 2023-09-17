@@ -1,5 +1,6 @@
 body {
-  background-image: #303030 url("../images/smoke.jpeg");
+  background-image: url("../images/smoke.jpeg");
+  background-color: #303030;
   background-size: cover;
   background-attachment: fixed;
 }
