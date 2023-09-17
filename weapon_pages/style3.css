@@ -1,7 +1,7 @@
 body {
-  background: #FF5733 url("../images/smoke.jpeg");
+  background-image: url("../images/smoke.jpeg");
   background-size: cover;
-  overflow-y: scroll;
+  background-attachment: fixed;
 }
 
 .offcanvas a {
