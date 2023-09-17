@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World War Z: Aftermath</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="../style3.css">
+    <script src="https://kit.fontawesome.com/852e8a85e4.js" crossorigin="anonymous" defer></script>
+</head>
+
+<body>
+    <!-- NAV Bar -->
+    <nav class="navbar bg-dark">
+        <div class="container navbar-dark justify-content-center">
+            <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcan" aria-controls="offcanvasExample">
+                <div class="navbar-toggler-icon"></div>
+            </button>
+            <div>
+                <div class="navbar-brand mx-5">WEAPONS</div>
+            </div>
+            <div>
+                <a href="../weapon.html" class="btn btn-secondary"><i class="fa-solid fa-arrow-right-to-bracket fa-flip-horizontal fa-lg"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcan" aria-labelledby="offcanLabel" data-bs-scroll="true">
+        <div class="offcanvas-header justify-content-center my-2">
+            <h2 class="offcanvas-title me-5">CLASSES</h2>
+            <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body">
+            <ul class="nav flex-column rounded-4 ms-5">
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html"><i class="fa-solid fa-gun"></i> Gunslinger</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/classP/hr.html"><i class="fa-solid fa-explosion"></i> Hellraiser</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/classP/m.html"><i class="fa-solid fa-suitcase-medical"></i> Medic</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/classP/f.html"><i class="fa-solid fa-screwdriver-wrench"></i> Fixer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/classP/s.html"><i class="fa-solid fa-scissors"></i> Slasher</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/classP/ex.html"><i class="fa-solid fa-mask"></i> Exterminator</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/classP/dm.html"><i class="fa-solid fa-robot"></i> Drone Master</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/classP/v.html"><i class="fa-solid fa-shield-halved"></i> Vanguard</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- WEAPON CONTENT -->
+    <div class="d-flex flex-column gap-4 flex-md-row mx-5 p-5 py-md-5 align-items-center justify-content-center">
+        <div class="col-md-6 col-12 d-flex align-items-center justify-content-center">
+            <div class="text-center"><img src="../../images/knives.jpeg" width="300px"></div>
+        </div>
+        <div class="col-md-6 col-12">
+            <div class="d-flex justify-content-between">
+                <div class="text-white">Damage</div>
+                <div class="text-white power-value">5</div>
+            </div>
+            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 20px;">
+                <div class="progress-bar power-bar progress-bar-striped progress-bar-animated bg-secondary text-warning" style="width: 50%"></div>
+            </div>
+            <div class="d-flex justify-content-between">
+                <div class="text-white">Speed</div>
+                <div class="text-white acc-value">10</div>
+            </div>
+            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 20px;">
+                <div class="progress-bar acc-bar progress-bar-striped progress-bar-animated bg-secondary text-warning" style="width: 100%"></div>
+            </div>
+            <div class="d-flex justify-content-between">
+                <div class="text-white">Melee Stamina</div>
+                <div class="text-white hand-value">7</div>
+            </div>
+            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 20px;">
+                <div class="progress-bar hand-bar progress-bar-striped progress-bar-animated bg-secondary text-warning" style="width: 70%"></div>
+            </div>
+            <div class="d-flex justify-content-between">
+                <div class="text-white">Push Cone</div>
+                <div class="text-white rate-value">5</div>
+            </div>
+            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 20px;">
+                <div class="progress-bar rate-bar progress-bar-striped progress-bar-animated bg-secondary text-warning" style="width: 50%"></div>
+            </div>
+            <div class="d-flex justify-content-between">
+                <div class="text-white">Target</div>
+                <div class="text-white pen-value">1</div>
+            </div>
+            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 20px;">
+                <div class="progress-bar pen-bar progress-bar-striped progress-bar-animated bg-secondary text-warning" style="width: 10%"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card w-75 mx-auto bg-warning-subtle">
+        <div class="card-header">Light Melee</div>
+        <div class="card-body">
+          <h4 class="card-title text-center">Duel Knives</h4>
+          <p class="card-text px-5">[3rd, then every 4th strike] Firearm damage increases by 25% for 3 seconds after killing an enemy with this weapon. Signature strikes of the Dual Knives deal 100% more damage.</p>
+        </div>
+      </div>
+</body>
+
+</html>
