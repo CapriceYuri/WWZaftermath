@@ -68,14 +68,29 @@ chooseRadio.forEach(radio => {
             penV.textContent = currentPen;
             penBar.style.width = currentPenBar;
 
-            cTempV1 = addPercent(9, 25) * 10
+            cTempV1 = 20
 
-            currentPower = (((currentPower * 10) + (cTempV1)) / 10)
-            currentPowerBar = convertToPercent(parseFloat(currentPowerBar) + (cTempV1))
+            currentPower = (((currentPower * 10) - (cTempV1)) / 10)
+            currentPowerBar = convertToPercent(parseFloat(currentPowerBar) - (cTempV1))
             powerV.textContent = Math.trunc(currentPower);
             powerBar.style.width = currentPowerBar;
             console.log(currentPower)
             console.log(currentPowerBar)
+
+            currentAcc += 0.5;
+            currentAccBar = convertToPercent(parseFloat(currentAccBar) + 5)
+            accV.textContent = Math.trunc(currentAcc);
+            accBar.style.width = currentAccBar;
+
+            currentHand += 1;
+            currentHandBar = convertToPercent(parseFloat(currentHandBar) + 10)
+            handV.textContent = currentHand;
+            handBar.style.width = currentHandBar;
+
+            currentRate -= 3;
+            currentRateBar = convertToPercent(parseFloat(currentRateBar) - 30)
+            rateV.textContent = currentRate;
+            rateBar.style.width = currentRateBar;
 
             codeApp = true;
         } else if (codeApp && !semiAuto.checked) {
@@ -84,12 +99,27 @@ chooseRadio.forEach(radio => {
             penV.textContent = currentPen;
             penBar.style.width = currentPenBar;
 
-            currentPower = (((currentPower * 10) - (cTempV1)) / 10)
-            currentPowerBar = convertToPercent(parseFloat(currentPowerBar) - (cTempV1))
+            currentPower = (((currentPower * 10) + (cTempV1)) / 10)
+            currentPowerBar = convertToPercent(parseFloat(currentPowerBar) + (cTempV1))
             powerV.textContent = Math.trunc(currentPower);
             powerBar.style.width = currentPowerBar;
             console.log(currentPower)
             console.log(currentPowerBar)
+
+            currentAcc -= 0.5;
+            currentAccBar = convertToPercent(parseFloat(currentAccBar) - 5)
+            accV.textContent = Math.trunc(currentAcc);
+            accBar.style.width = currentAccBar;
+
+            currentHand -= 1;
+            currentHandBar = convertToPercent(parseFloat(currentHandBar) - 10)
+            handV.textContent = currentHand;
+            handBar.style.width = currentHandBar;
+
+            currentRate += 3;
+            currentRateBar = convertToPercent(parseFloat(currentRateBar) + 30)
+            rateV.textContent = currentRate;
+            rateBar.style.width = currentRateBar;
 
             codeApp = false;
         }
@@ -138,7 +168,7 @@ nod2.addEventListener('change', () => {
     if (nod2.checked) {
         currentAcc += 2;
         currentAccBar = convertToPercent(parseFloat(currentAccBar) + 20)
-        accV.textContent = currentAcc;
+        accV.textContent = Math.trunc(currentAcc);
         accBar.style.width = currentAccBar;
 
         cTempV2 = addPercent(9, 15) * 10
@@ -154,7 +184,7 @@ nod2.addEventListener('change', () => {
     } else if (nod2App && !nod2.checked) {
         currentAcc -= 2;
         currentAccBar = convertToPercent(parseFloat(currentAccBar) - 20)
-        accV.textContent = currentAcc;
+        accV.textContent = Math.trunc(currentAcc);
         accBar.style.width = currentAccBar;;
 
         currentPower = (((currentPower * 10) + (cTempV2)) / 10)

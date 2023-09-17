@@ -58,6 +58,49 @@ let cTempB1;
 let cTempV2;
 let cTempB2;
 
+chooseRadio.forEach(radio => {
+    radio.addEventListener('change', () => {
+        if (eagleScout.checked) {
+            currentPen += 1;
+            currentPenBar = convertToPercent(parseFloat(currentPenBar) + 50)
+            penV.textContent = currentPen;
+            penBar.style.width = currentPenBar;
+
+            currentAcc += 0.5;
+            currentAccBar = convertToPercent(parseFloat(currentAccBar) + 5)
+            accV.textContent = Math.trunc(currentAcc);
+            accBar.style.width = currentAccBar;
+            console.log(currentAcc)
+
+            currentHand += 1;
+            currentHandBar = convertToPercent(parseFloat(currentHandBar) + 10)
+            handV.textContent = currentHand;
+            handBar.style.width = currentHandBar;
+
+
+            codeApp = true;
+        } else if (codeApp && !eagleScout.checked) {
+            currentPen -= 1;
+            currentPenBar = convertToPercent(parseFloat(currentPenBar) - 50)
+            penV.textContent = currentPen;
+            penBar.style.width = currentPenBar;
+
+            currentAcc -= 0.5;
+            currentAccBar = convertToPercent(parseFloat(currentAccBar) - 5)
+            accV.textContent = Math.trunc(currentAcc);
+            accBar.style.width = currentAccBar;
+            console.log(currentAcc)
+
+            currentHand -= 1;
+            currentHandBar = convertToPercent(parseFloat(currentHandBar) - 10)
+            handV.textContent = currentHand;
+            handBar.style.width = currentHandBar;
+
+            codeApp = false;
+        }
+    })
+})
+
 // For Checkboxes
 checkBox.forEach(box => {
     box.addEventListener('change', () => {
@@ -92,14 +135,14 @@ nod2.addEventListener('change', () => {
     if (nod2.checked) {
         currentAcc += 2;
         currentAccBar = convertToPercent(parseFloat(currentAccBar) + 20)
-        accV.textContent = currentAcc;
+        accV.textContent = Math.trunc(currentAcc);
         accBar.style.width = currentAccBar;
 
         nod2App = true;
     } else if (nod2App && !nod2.checked) {
         currentAcc -= 2;
         currentAccBar = convertToPercent(parseFloat(currentAccBar) - 20)
-        accV.textContent = currentAcc;
+        accV.textContent = Math.trunc(currentAcc);
         accBar.style.width = currentAccBar;
 
         nod2App = false
@@ -115,7 +158,7 @@ nod3.addEventListener('change', () => {
 
         currentAcc -= 1;
         currentAccBar = convertToPercent(parseFloat(currentAccBar) - 10)
-        accV.textContent = currentAcc;
+        accV.textContent = Math.trunc(currentAcc);
         accBar.style.width = currentAccBar;
 
         nod3App = true;
@@ -127,7 +170,7 @@ nod3.addEventListener('change', () => {
 
         currentAcc += 1;
         currentAccBar = convertToPercent(parseFloat(currentAccBar) + 10)
-        accV.textContent = currentAcc;
+        accV.textContent = Math.trunc(currentAcc);
         accBar.style.width = currentAccBar;
 
         nod3App = false;

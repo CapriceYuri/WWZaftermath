@@ -60,25 +60,64 @@ let cTempV2;
 let cTempB2;
 
 // For Radio Button
-// chooseRadio.forEach(radio => {
-//     radio.addEventListener('change', () => {
-//         if (boatTail.checked) {
-//             currentAcc += 2;
-//             currentAccBar = convertToPercent(parseFloat(currentAccBar) + 20)
-//             accV.textContent = currentAcc;
-//             accBar.style.width = currentAccBar;
+chooseRadio.forEach(radio => {
+    radio.addEventListener('change', () => {
+        if (selective.checked) {
+            currentAcc -= 3;
+            currentAccBar = convertToPercent(parseFloat(currentAccBar) - 30)
+            accV.textContent = currentAcc;
+            accBar.style.width = currentAccBar;
 
-//             codeApp = true;
-//         } else if (codeApp && !boatTail.checked) {
-//             currentAcc -= 2;
-//             currentAccBar = convertToPercent(parseFloat(currentAccBar) - 20)
-//             accV.textContent = currentAcc;
-//             accBar.style.width = currentAccBar;
+            currentPower -= 1;
+            currentPowerBar = convertToPercent(parseFloat(currentPowerBar) - 10);
+            powerV.textContent = currentPower;
+            powerBar.style.width = currentPowerBar;
 
-//             codeApp = false;
-//         }
-//     })
-// })
+            currentHand += 0.5;
+            currentHandBar = convertToPercent(parseFloat(currentHandBar) + 5)
+            handV.textContent = Math.trunc(currentHand);
+            handBar.style.width = currentHandBar;
+
+            currentRate += 5;
+            currentRateBar = convertToPercent(parseFloat(currentRateBar) + 50)
+            rateV.textContent = currentRate;
+            rateBar.style.width = currentRateBar;
+
+            currentPen -= 1;
+            currentPenBar = convertToPercent(parseFloat(currentPenBar) - 50)
+            penV.textContent = currentPen;
+            penBar.style.width = currentPenBar;
+            codeApp = true;
+        } else if (codeApp && !selective.checked) {
+            currentAcc += 3;
+            currentAccBar = convertToPercent(parseFloat(currentAccBar) + 30)
+            accV.textContent = currentAcc;
+            accBar.style.width = currentAccBar;
+
+            currentPower += 1;
+            currentPowerBar = convertToPercent(parseFloat(currentPowerBar) + 10);
+            powerV.textContent = currentPower;
+            powerBar.style.width = currentPowerBar;
+
+            currentRate -= 5;
+            currentRateBar = convertToPercent(parseFloat(currentRateBar) - 50)
+            rateV.textContent = currentRate;
+            rateBar.style.width = currentRateBar;
+
+            currentHand -= 0.5;
+            currentHandBar = convertToPercent(parseFloat(currentHandBar) - 5)
+            handV.textContent = Math.trunc(currentHand);
+            handBar.style.width = currentHandBar;
+
+            currentPen += 1;
+            currentPenBar = convertToPercent(parseFloat(currentPenBar) + 50)
+            penV.textContent = currentPen;
+            penBar.style.width = currentPenBar;
+
+            codeApp = false;
+        }
+    })
+})
 
 
 
@@ -148,14 +187,14 @@ nod3.addEventListener('change', () => {
     if (nod3.checked) {
         currentHand += 2;
         currentHandBar = convertToPercent(parseFloat(currentHandBar) + 20)
-        handV.textContent = currentHand;
+        handV.textContent = Math.trunc(currentHand);
         handBar.style.width = currentHandBar;
 
         nod3App = true;
     } else if (nod3App && !nod3.checked) {
         currentHand -= 2;
         currentHandBar = convertToPercent(parseFloat(currentHandBar) - 20)
-        handV.textContent = currentHand;
+        handV.textContent = Math.trunc(currentHand);
         handBar.style.width = currentHandBar;
 
         nod3App = false;

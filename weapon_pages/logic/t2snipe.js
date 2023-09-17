@@ -53,13 +53,44 @@ function addPercent(total, percent) {
     return percent * temp;
 }
 
+let tempV;
 let cTempV1;
 let cTempB1;
 let cTempV2;
 let cTempB2;
 
 // For Radio Button
+chooseRadio.forEach(radio => {
+    radio.addEventListener('change', () => {
+        if (twoBurst.checked) {
+            currentRate += 1;
+            currentRateBar = convertToPercent(parseFloat(currentRateBar) + 10)
+            rateV.textContent = currentRate;
+            rateBar.style.width = currentRateBar;
 
+            tempV = 30
+            currentPower = (((currentPower * 10) + (tempV)) / 10)
+            currentPowerBar = convertToPercent(parseFloat(currentPowerBar) + (tempV))
+            powerV.textContent = Math.trunc(currentPower);
+            powerBar.style.width = currentPowerBar;
+
+            codeApp = true;
+        } else if (codeApp && !twoBurst.checked) {
+            currentRate -= 1;
+            currentRateBar = convertToPercent(parseFloat(currentRateBar) - 10)
+            rateV.textContent = currentRate;
+            rateBar.style.width = currentRateBar;
+
+            currentPower = (((currentPower * 10) - (tempV)) / 10)
+            currentPowerBar = convertToPercent(parseFloat(currentPowerBar) - (tempV))
+            powerV.textContent = Math.trunc(currentPower);
+            powerBar.style.width = currentPowerBar;
+
+
+            codeApp = false;
+        }
+    })
+})
 
 // For Checkboxes
 checkBox.forEach(box => {

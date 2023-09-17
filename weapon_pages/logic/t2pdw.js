@@ -62,16 +62,10 @@ let cTempB2;
 chooseRadio.forEach(radio => {
     radio.addEventListener('change', () => {
         if (semiAuto.checked) {
-            cTempV1 = parseInt(addPercent(5, 70) * 10)
-
-            currentPower = (((currentPower * 10) + (cTempV1)) / 10)
-            currentPowerBar = convertToPercent(parseFloat(currentPowerBar) + (cTempV1))
-            powerV.textContent = Math.trunc(currentPower);
-            powerBar.style.width = currentPowerBar;
-
-            console.log(cTempV1)
-            console.log(currentPower)
-            console.log(currentPowerBar)
+            currentRate -= 4;
+            currentRateBar = convertToPercent(parseFloat(currentRateBar) - 40);
+            rateV.textContent = currentRate;
+            rateBar.style.width = currentRateBar;
 
             currentPen += 1;
             currentPenBar = convertToPercent(parseFloat(currentPenBar) + 50);
@@ -80,15 +74,10 @@ chooseRadio.forEach(radio => {
 
             codeApp = true;
         } else if (codeApp && !semiAuto.checked) {
-            currentPower = (((currentPower * 10) - (cTempV1)) / 10)
-            currentPowerBar = convertToPercent(parseFloat(currentPowerBar) - (cTempV1))
-            powerV.textContent = Math.trunc(currentPower);
-            powerBar.style.width = currentPowerBar;
-
-            console.log(cTempV1)
-            console.log(currentPower)
-            console.log(currentPowerBar)
-
+            currentRate += 4;
+            currentRateBar = convertToPercent(parseFloat(currentRateBar) + 40);
+            rateV.textContent = currentRate;
+            rateBar.style.width = currentRateBar;
             currentPen -= 1;
             currentPenBar = convertToPercent(parseFloat(currentPenBar) - 50);
             penV.textContent = currentPen;

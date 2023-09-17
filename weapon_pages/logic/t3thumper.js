@@ -59,7 +59,31 @@ let cTempV2;
 let cTempB2;
 
 // For Radio Button
+chooseRadio.forEach(radio => {
+    radio.addEventListener('change', () => {
+        if (grenade.checked) {
+            cTempV1 = 80
 
+            currentPower = (((currentPower * 10) - (cTempV1)) / 10)
+            currentPowerBar = convertToPercent(parseFloat(currentPowerBar) - (cTempV1))
+            powerV.textContent = Math.trunc(currentPower);
+            powerBar.style.width = currentPowerBar;
+            console.log(currentPower)
+            console.log(currentPowerBar)
+
+            codeApp = true;
+        } else if (codeApp && !grenade.checked) {
+            currentPower = (((currentPower * 10) + (cTempV1)) / 10)
+            currentPowerBar = convertToPercent(parseFloat(currentPowerBar) + (cTempV1))
+            powerV.textContent = Math.trunc(currentPower);
+            powerBar.style.width = currentPowerBar;
+            console.log(currentPower)
+            console.log(currentPowerBar)
+
+            codeApp = false;
+        }
+    })
+})
 
 
 // For Checkboxes

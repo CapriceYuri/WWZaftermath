@@ -77,6 +77,32 @@ chooseRadio.forEach(radio => {
 
             codeApp = false;
         }
+
+        if (fullAuto.checked) {
+            currentRate += 3;
+            currentRateBar = convertToPercent(parseFloat(currentRateBar) + 30)
+            rateV.textContent = currentRate;
+            rateBar.style.width = currentRateBar;
+
+            currentAcc -= 1;
+            currentAccBar = convertToPercent(parseFloat(currentAccBar) - 10)
+            accV.textContent = currentAcc;
+            accBar.style.width = currentAccBar;
+
+            code2App = true;
+        } else if (code2App && !fullAuto.checked) {
+            currentAcc += 1;
+            currentAccBar = convertToPercent(parseFloat(currentAccBar) + 10)
+            accV.textContent = currentAcc;
+            accBar.style.width = currentAccBar;
+
+            currentRate -= 3;
+            currentRateBar = convertToPercent(parseFloat(currentRateBar) - 30)
+            rateV.textContent = currentRate;
+            rateBar.style.width = currentRateBar;
+
+            code2App = false;
+        }
     })
 })
 
