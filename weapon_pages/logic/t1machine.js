@@ -59,41 +59,25 @@ let cTempV2;
 let cTempB2;
 
 // For Radio Button
-// chooseRadio.forEach(radio => {
-//     radio.addEventListener('change', () => {
-//         if (fmjRound2.checked) {
-//             currentAcc += 2
-//             currentAccBar = convertToPercent(parseInt(currentAccBar) + 20)
-//             accV.textContent = currentAcc;
-//             accBar.style.width = currentAccBar;
+chooseRadio.forEach(radio => {
+    radio.addEventListener('change', () => {
+        if (refresh.checked) {
+            currentRate += 3;
+            currentRateBar = convertToPercent(parseInt(currentRateBar) + 30)
+            rateV.textContent = currentRate;
+            rateBar.style.width = currentRateBar;
 
-//             currentPen += 2;
-//             currentPenBar = convertToPercent(parseInt(currentPenBar) + 100)
-//             penV.textContent = currentPen;
-//             penBar.style.width = currentPenBar;
+            codeApp = true;
+        } else if (codeApp && !refresh.checked) {
+            currentRate -= 3;
+            currentRateBar = convertToPercent(parseInt(currentRateBar) - 30)
+            rateV.textContent = currentRate;
+            rateBar.style.width = currentRateBar;
 
-//             currentMag -= 4;
-//             magV.textContent = currentMag;
-
-//             codeApp = true;
-//         } else if (codeApp && !fmjRound2.checked) {
-//             currentAcc -= 2
-//             currentAccBar = convertToPercent(parseInt(currentAccBar) - 20)
-//             accV.textContent = currentAcc;
-//             accBar.style.width = currentAccBar;
-
-//             currentPen -= 2;
-//             currentPenBar = convertToPercent(parseInt(currentPenBar) - 100)
-//             penV.textContent = currentPen;
-//             penBar.style.width = currentPenBar;
-
-//             currentMag += 4;
-//             magV.textContent = currentMag;
-
-//             codeApp = false;
-//         }
-//     })
-// })
+            codeApp = false;
+        }
+    })
+})
 
 
 

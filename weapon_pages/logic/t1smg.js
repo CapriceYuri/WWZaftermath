@@ -52,6 +52,7 @@ function addPercent(total, percent) {
     return percent * temp;
 }
 
+let tempV;
 let cTempV1;
 let cTempB1;
 let cTempV2;
@@ -65,12 +66,23 @@ chooseRadio.forEach(radio => {
             currentRateBar = convertToPercent(parseInt(currentRateBar) + 30)
             rateV.textContent = currentRate;
             rateBar.style.width = currentRateBar;
+
+            tempV = 1;
+            currentPowerBar = convertToPercent(parseInt(currentPowerBar) + (tempV * 10))
+            currentPower += tempV;
+            powerV.textContent = Math.trunc(currentPower)
+            powerBar.style.width = currentPowerBar;
             codeApp = true;
         } else if (codeApp && !snakebite.checked) {
             currentRate -= 3;
             currentRateBar = convertToPercent(parseInt(currentRateBar) - 30)
             rateV.textContent = currentRate;
             rateBar.style.width = currentRateBar;
+
+            currentPowerBar = convertToPercent(parseInt(currentPowerBar) - (tempV * 10))
+            currentPower -= tempV;
+            powerV.textContent = Math.trunc(currentPower)
+            powerBar.style.width = currentPowerBar;
             codeApp = false;
         }
     })

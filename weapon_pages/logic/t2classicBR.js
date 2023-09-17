@@ -62,7 +62,7 @@ let cTempB2;
 chooseRadio.forEach(radio => {
     radio.addEventListener('change', () => {
         if (hpRound2.checked) {
-            cTempV1 = (addPercent(9, 100) * 10)
+            cTempV1 = (4 * 10)
 
             currentPower = (((currentPower * 10) + (cTempV1)) / 10)
             currentPowerBar = convertToPercent(parseFloat(currentPowerBar) + (cTempV1))
@@ -73,6 +73,11 @@ chooseRadio.forEach(radio => {
             currentPenBar =  convertToPercent(parseFloat(currentPenBar) - 100)
             penV.textContent = Math.trunc(currentPen)
             penBar.style.width = currentPenBar;
+
+            currentRate -= 2;
+            currentRateBar =  convertToPercent(parseFloat(currentRateBar) - 20)
+            rateV.textContent = Math.trunc(currentRate)
+            rateBar.style.width = currentRateBar;
 
             console.log(cTempV1)
             console.log(currentPower)
@@ -88,6 +93,11 @@ chooseRadio.forEach(radio => {
             console.log(cTempV1)
             console.log(currentPower)
             console.log(currentPowerBar)
+
+            currentRate += 2;
+            currentRateBar =  convertToPercent(parseFloat(currentRateBar) + 20)
+            rateV.textContent = Math.trunc(currentRate)
+            rateBar.style.width = currentRateBar;
 
             currentPen += 2;
             currentPenBar =  convertToPercent(parseFloat(currentPenBar) + 100)

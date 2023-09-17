@@ -62,7 +62,7 @@ let cTempB;
 chooseRadio.forEach(radio => {
     radio.addEventListener('change', () => {
         if (wolfpack.checked) {
-            tempV = addPercent(5, 10)
+            tempV = 1;
             currentPowerBar = convertToPercent(parseInt(currentPowerBar) + (tempV * 10))
             currentPower += tempV;
             powerV.textContent = Math.trunc(currentPower)

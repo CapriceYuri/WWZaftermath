@@ -62,7 +62,7 @@ let cTempB2;
 chooseRadio.forEach(radio => {
     radio.addEventListener('change', () => {
         if (customFit.checked) {
-            cTempV1 = (addPercent(7, 25) * 10)
+            cTempV1 = (2 * 10)
 
             currentPower = (((currentPower * 10) + (cTempV1)) / 10)
             currentPowerBar = convertToPercent(parseFloat(currentPowerBar) + (cTempV1))
