@@ -136,7 +136,7 @@ perks.forEach(item => {
                 pInfo.textContent = 'Start with a Senjata PDW in your secondary weapon slot.'
                 break;
             case 'gsh4':
-                pName.textContent = 'Bad Oder'
+                pName.textContent = 'Bad Odor'
                 pInfo.textContent = `There is a chance that killing a special zombie will cause it to drop a primary weapon (cooldown: 180 seconds).`
                 break;
 
