@@ -18,9 +18,13 @@ tr img {
     z-index: 23;
 }
 
-.pick,
-tr img:hover {
+.pick {
     background-color: orange;
+    border-radius: 10px;
+}
+
+tr img:hover {
+    background-color: peachpuff;
     border-radius: 10px;
 }
 
