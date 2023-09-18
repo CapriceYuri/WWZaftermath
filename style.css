@@ -1,6 +1,6 @@
 body {
   height: 100vh;
-  background-image: url("../images/wwz2.jpeg");
+  background-image: url("./images/wwz2.jpeg");
   background-position: center;
   background-position-y: 55%;
   background-repeat: no-repeat;
@@ -9,7 +9,7 @@ body {
 
 body.rank {
   height: 100vh;
-  background-image: url("../images/wallpaper2.jpg");
+  background-image: url("./images/wallpaper2.jpg");
   background-position: center;
   background-position-y: 50%;
   background-repeat: no-repeat;
