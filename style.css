@@ -11,7 +11,7 @@ body.rank {
   height: 100vh;
   background-image: url("../images/wallpaper2.jpg");
   background-position: center;
-  background-position-y: 55%;
+  background-position-y: 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -72,4 +72,19 @@ td {
   font-style: italic;
   font-weight: bold;
   color: orange;
+}
+
+.leaderboard {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.leader-table {
+  width: 600px;
+  -webkit-backdrop-filter: invert(70%) !important;
+          backdrop-filter: invert(70%) !important;
+  border-radius: 10px;
 }/*# sourceMappingURL=style.css.map */
