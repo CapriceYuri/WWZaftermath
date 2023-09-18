@@ -1,10 +1,19 @@
 body {
   height: 100vh;
-  background-image: url("./images/wwz2.jpeg");
+  background-image: url("../images/wwz2.jpeg");
   background-position: center;
   background-position-y: 55%;
   background-repeat: no-repeat;
   background-size: fill;
+}
+
+body.rank {
+  height: 100vh;
+  background-image: url("../images/wallpaper2.jpg");
+  background-position: center;
+  background-position-y: 55%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container {
