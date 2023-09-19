@@ -74,14 +74,6 @@ td {
   color: orange;
 }
 
-.leaderboard {
-  height: 90%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: start;
-}
-
 .leader-table {
   width: 600px;
   -webkit-backdrop-filter: invert(70%) !important;
