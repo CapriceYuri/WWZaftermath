@@ -72,8 +72,13 @@ td {
     font-weight: bold;
     color: orange;
 }
+.leaderboard{
+    display: flex;
+    justify-content: center;
+}
 .leader-table{
-    width: 600px;
+    min-width: 300px;
+    width: 400px;
     backdrop-filter: invert(70%) !important;
     border-radius: 10px;
 }
