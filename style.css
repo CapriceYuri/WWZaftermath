@@ -20,6 +20,7 @@ body {
 
 .content {
   position: absolute;
+  margin-top: 5rem;
   right: 50%;
   transform: translateX(50%);
   width: 80%;
