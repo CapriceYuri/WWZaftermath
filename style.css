@@ -18,6 +18,10 @@ body {
   width: 100vw;
 }
 
+.contaier {
+  overflow-x: scroll;
+}
+
 .content {
   position: absolute;
   margin-top: 5rem;
