@@ -7,6 +7,10 @@ body {
   background-size: fill;
 }
 
+.mutate {
+  overflow: hidden;
+}
+
 body.rank {
   background-image: url("images/wallpaper2.jpg");
   background-color: #303030;
@@ -14,6 +18,7 @@ body.rank {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: fill;
+  overflow: auto;
 }
 
 .container {
