@@ -7,22 +7,22 @@ body {
   background-size: fill;
 }
 
-.mutate {
-  overflow: hidden;
-}
-
-body.rank {
+.bg {
   background-image: url("images/wallpaper2.jpg");
   background-color: #303030;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: fill;
-  overflow: auto;
+  background-size: cover;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
 }
 
-.container {
-  overflow-x: auto;
+.content {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  width: 80%;
 }
 
 tr img {

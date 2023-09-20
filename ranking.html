@@ -16,7 +16,7 @@
 
 <body class="rank">
     <!-- NAV Bar -->
-    <nav class="navbar bg-dark">
+    <nav class="navbar bg-dark fixed-top">
         <div class="container navbar-dark justify-content-center">
             <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcan" aria-controls="offcanvasExample">
                 <div class="navbar-toggler-icon"></div>
@@ -66,709 +66,711 @@
     </div>
 
     <!-- BODY Content -->
-    <div class="my-3 mutate">
-        <div class="h2 text-center text-light fst-italic">UNIQUE (one at a time)</div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/comfortZone.png" class="img rounded-start">
+    <div class="bg"></div>
+    <div class="content">
+        <div class="my-3 mutate">
+            <div class="h2 text-center text-light fst-italic">UNIQUE (one at a time)</div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/comfortZone.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Comfort Zone</h5>
+                        <p class="card-text">You will slowly lose your health (2% of health per second) when there are no teammates within 5 meters (16 feet) of you for more than 5 seconds.</p>
+                    </div>
                 </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Comfort Zone</h5>
-                    <p class="card-text">You will slowly lose your health (2% of health per second) when there are no teammates within 5 meters (16 feet) of you for more than 5 seconds.</p>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/personalSpace.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Personal Space</h5>
+                        <p class="card-text">You will slowly lose your health (2% of health per second) when there is at least one teammate within 5 meters (16 feet) of you for more than 5 seconds.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/hunger.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Hunger</h5>
+                        <p class="card-text">You will begin to slowly lose your health 10 seconds after your last zombie kill (0.5% of health per second).</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/personalSpace.png" class="img rounded-start">
+
+        <!-- CODE DIVISON -->
+
+        <div class="my-3 mutate">
+            <div class="h2 text-center text-light fst-italic">UNIQUE (one at a time)</div>
+
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/perfectCon.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Perfect Condition</h5>
+                        <p class="card-text">You can't die by being incapacitated, but every incapacitation will decrease your mass health by 25% (but no less than 10% of it's original value).</p>
+                    </div>
                 </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Personal Space</h5>
-                    <p class="card-text">You will slowly lose your health (2% of health per second) when there is at least one teammate within 5 meters (16 feet) of you for more than 5 seconds.</p>
+            </div>
+
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/instadeath.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Instadeath</h5>
+                        <p class="card-text">When your health reaches zero, you will die instantly instead of being incapacitated first.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/1up.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">1 UP</h5>
+                        <p class="card-text">You won't be able to respawn and get back into the fight after you die.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/ironMan.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Iron Man</h5>
+                        <p class="card-text">You have only one chance to live. When your health reaches zero, you will die with no respawn for the remainder of the mission.</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/hunger.png" class="img rounded-start">
+
+        <!-- CODE DIVISON -->
+
+        <div class="my-3 mutate">
+            <div class="h2 text-center text-light fst-italic">UNIQUE (one at a time)</div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/specialForces.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Special Forces</h5>
+                        <p class="card-text">Special zombies will arrive twice as often as usual.</p>
+                    </div>
                 </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Hunger</h5>
-                    <p class="card-text">You will begin to slowly lose your health 10 seconds after your last zombie kill (0.5% of health per second).</p>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/cannonFodder.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Cannon Fodder</h5>
+                        <p class="card-text">There will be no special zombies but zombie waves will be more numerous.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CODE DIVISON -->
+        <div class="my-3 mutate">
+            <div class="h2 text-center text-light fst-italic">UNIQUE (one at a time)</div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/crossbarFiesta.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Crossbow Fiesta</h5>
+                        <p class="card-text">Everyone gets a free crossbow and can't have any other primary weapon.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/shotgunFiesta.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Shotgun Fiesta</h5>
+                        <p class="card-text">Every player gets a shotgun and can only find shotguns as primary and secondary weapons on the mission.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- CODE DIVISON -->
+        <div class="my-3 mutate">
+            <div class="h2 text-center text-light fst-italic">UNIQUE (one at a time)</div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/restlessHordes.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Restless Hordes</h5>
+                        <p class="card-text">Zombie waves will arrive twice as often.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/lightWaves.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Light Waves</h5>
+                        <p class="card-text">Zombie waves will be twice shorter.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- CODE DIVISON -->
+        <div class="my-3 mutate">
+            <div class="h2 text-center text-light fst-italic">UNIQUE (one at a time)</div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/allFlashNoBang.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">All Flash, No Bang</h5>
+                        <p class="card-text">There will be more primary and secondary weapons scattered throughout the level, but you won't find ammo crates.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/heavyhitter.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Heavy Hitters</h5>
+                        <p class="card-text">You'll find many more heavy weapons than usual on the mission.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/gunShortage.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Gun Shortage</h5>
+                        <p class="card-text">The only new weapons you'll find on the mission are heavy weapons. Heavy weapons have twice more ammo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/lootingIsACrime.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Looting Is A Crime</h5>
+                        <p class="card-text">You will find much less pickups in the mission.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CODE DIVISON -->
+        <div class="my-3 mutate">
+            <div class="h2 text-center text-light fst-italic">Common (several can be used at once)</div>
+
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/emptyPockets.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Empty Pockets</h5>
+                        <p class="card-text">Carried ammo for primary and secondary weapons reduced by 50%.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/ammoDump.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Ammo Dump</h5>
+                        <p class="card-text">When reloading a weapon all ammo left in the magazine will be lost.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/lowCap.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Low Capacity</h5>
+                        <p class="card-text">Primary and secondary weapon magazines are reduced by 50%.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/rookie.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Rookie</h5>
+                        <p class="card-text">All your class perks except for the first one won't work.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/slow.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Slow</h5>
+                        <p class="card-text">You can't sprint.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/asthma.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Asthma</h5>
+                        <p class="card-text">You will slowly lose your health (3% per second) when sprinting.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/smallPharm.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Small Pharma</h5>
+                        <p class="card-text">You won't find any medkits on the mission.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/defenseless.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Defenseless</h5>
+                        <p class="card-text">You won't find any defense kits or defenses on the mission.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/shakeyHands.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Shaky Hands</h5>
+                        <p class="card-text">Shooting on the move and without aiming is extremely inaccurate.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/limitedReach.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Limited Reach</h5>
+                        <p class="card-text">All firearms won't deal damage on distance longer than 50 meters (165 feet).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/thief.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Thief</h5>
+                        <p class="card-text">No ammo crates, but each melee kill restores 3% of your primary and secondary weapon's ammo. +50% melee damage to zombies.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/looter.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Looter</h5>
+                        <p class="card-text">You won't find equipment bags on the mission, but your equipment will be constantly regenerating (100 seconds to replenish to maximum).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/revenge.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Revenge</h5>
+                        <p class="card-text">Team members will produce a huge explosion when they die.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/iFeelYourPain.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">I Feel Your Pain</h5>
+                        <p class="card-text">A randomly chosen player will have 100% more health, but all damage taken by the team redirects to him. If he dies, it's game over.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/treason.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Treason</h5>
+                        <p class="card-text">Friendly fire is tripled for the whole team.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/weakness.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Weakness</h5>
+                        <p class="card-text">Melee attacks do 75% less damage than they normally would.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/nightTime.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Night Time</h5>
+                        <p class="card-text">Many more idle zombies will be scattered throughout the levels.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/pinnedDown.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Pinned Down</h5>
+                        <p class="card-text">You can be pinned to the ground by far fewer zombies than usual.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/nemesis.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Nemesis</h5>
+                        <p class="card-text">You will be chased throughout the entire mission by a Bull that can't be killed.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/eliteSquad.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Elite Squad</h5>
+                        <p class="card-text">You can encounter unusual zombies who are very hard to kill. They're very slow but they can instantly pin you down.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/aDud.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">A Dud</h5>
+                        <p class="card-text">All explosives do 75% less damage to zombies.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/ironHide.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Iron Hide</h5>
+                        <p class="card-text">Zombies are harder to stagger with bullet hits.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/undying.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Undying</h5>
+                        <p class="card-text">Special zombies will have twice as much health as usual.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/justAScratch.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Just A Scratch</h5>
+                        <p class="card-text">Zombies won't take any damage from headshots.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/chainsaw.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Chainsaw Massacre</h5>
+                        <p class="card-text">Only chainsaws are available as heavy weapons for the entire mission.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/dieHard.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Die Hard</h5>
+                        <p class="card-text">All team members have 50% more health.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/classWeakGS.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Class Weakness: Gunslinger</h5>
+                        <p class="card-text">Gunslinger will have 50% less health and will inflict 50% less damage to enemies.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/classWeakHR.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Class Weakness: Hellraiser</h5>
+                        <p class="card-text">Hellraiser will have 50% less health and will inflict 50% less damage to enemies.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/classWeakM.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Class Weakness: Medic</h5>
+                        <p class="card-text">Medic will have 50% less health and will inflict 50% less damage to enemies.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/classWeakF.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Class Weakness: Fixer</h5>
+                        <p class="card-text">Fixer will have 50% less health and will inflict 50% less damage to enemies.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/classWeakS.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Class Weakness: Slasher</h5>
+                        <p class="card-text">Slasher will have 50% less health and will inflict 50% less damage to enemies.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/classWeakEx.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Class Weakness: Exterminator</h5>
+                        <p class="card-text">Exterminator will have 50% less health and will inflict 50% less damage to enemies.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/classWeakDM.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Class Weakness: Dronemaster</h5>
+                        <p class="card-text">Dronemaster will have 50% less health and will inflict 50% less damage to enemies.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/classWeakV.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Class Weakness: Vanguard</h5>
+                        <p class="card-text">Vanguard will have 50% less health and will inflict 50% less damage to enemies.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/airStrike.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Airstrike</h5>
+                        <p class="card-text">Mortar attacks periodically occur during the wave.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/theImpaler.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">The Impaler</h5>
+                        <p class="card-text">Health is restored on melee kill, but medkits are no longer found on the mission.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/whatWasThatBoom.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">What Was That Boom</h5>
+                        <p class="card-text">All primary weapons have explosive ammo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/doubleBenefits.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Double Benefits</h5>
+                        <p class="card-text">All secondary weapons have double damage.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/lifeBuoy.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Lifebuoy</h5>
+                        <p class="card-text">When you revive an ally, you both gain a masking effect for 6 seconds.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/legDay.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Leg Day</h5>
+                        <p class="card-text">When climbing, the player loses some health and all stamina.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/primaryWeak.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Primary Weakness</h5>
+                        <p class="card-text">Primary weapon damage reduced by 75%.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/healingEx.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Healing Explosions</h5>
+                        <p class="card-text">Explosions form devices and heavy weapons restore health.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group my-2 px-2 mutate-list mx-auto">
+                <div class="card mx-auto trans d-flex flex-row p-3 w-100">
+                    <div class="col-md-4 align-self-center text-center">
+                        <img src="./images/minedCorpses.png" class="img rounded-start">
+                    </div>
+                    <div class="card-body text-light p-2">
+                        <h5 class="card-title">Mined Corpses</h5>
+                        <p class="card-text">Zombies killed by headshot explode, but only players take damage from the explosion.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- CODE DIVISON -->
-
-    <div class="my-3 mutate">
-        <div class="h2 text-center text-light fst-italic">UNIQUE (one at a time)</div>
-
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/perfectCon.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Perfect Condition</h5>
-                    <p class="card-text">You can't die by being incapacitated, but every incapacitation will decrease your mass health by 25% (but no less than 10% of it's original value).</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/instadeath.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Instadeath</h5>
-                    <p class="card-text">When your health reaches zero, you will die instantly instead of being incapacitated first.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/1up.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">1 UP</h5>
-                    <p class="card-text">You won't be able to respawn and get back into the fight after you die.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/ironMan.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Iron Man</h5>
-                    <p class="card-text">You have only one chance to live. When your health reaches zero, you will die with no respawn for the remainder of the mission.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- CODE DIVISON -->
-
-    <div class="my-3 mutate">
-        <div class="h2 text-center text-light fst-italic">UNIQUE (one at a time)</div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/specialForces.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Special Forces</h5>
-                    <p class="card-text">Special zombies will arrive twice as often as usual.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/cannonFodder.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Cannon Fodder</h5>
-                    <p class="card-text">There will be no special zombies but zombie waves will be more numerous.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- CODE DIVISON -->
-    <div class="my-3 mutate">
-        <div class="h2 text-center text-light fst-italic">UNIQUE (one at a time)</div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/crossbarFiesta.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Crossbow Fiesta</h5>
-                    <p class="card-text">Everyone gets a free crossbow and can't have any other primary weapon.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/shotgunFiesta.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Shotgun Fiesta</h5>
-                    <p class="card-text">Every player gets a shotgun and can only find shotguns as primary and secondary weapons on the mission.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- CODE DIVISON -->
-    <div class="my-3 mutate">
-        <div class="h2 text-center text-light fst-italic">UNIQUE (one at a time)</div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/restlessHordes.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Restless Hordes</h5>
-                    <p class="card-text">Zombie waves will arrive twice as often.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/lightWaves.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Light Waves</h5>
-                    <p class="card-text">Zombie waves will be twice shorter.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- CODE DIVISON -->
-    <div class="my-3 mutate">
-        <div class="h2 text-center text-light fst-italic">UNIQUE (one at a time)</div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/allFlashNoBang.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">All Flash, No Bang</h5>
-                    <p class="card-text">There will be more primary and secondary weapons scattered throughout the level, but you won't find ammo crates.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/heavyhitter.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Heavy Hitters</h5>
-                    <p class="card-text">You'll find many more heavy weapons than usual on the mission.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/gunShortage.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Gun Shortage</h5>
-                    <p class="card-text">The only new weapons you'll find on the mission are heavy weapons. Heavy weapons have twice more ammo.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/lootingIsACrime.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Looting Is A Crime</h5>
-                    <p class="card-text">You will find much less pickups in the mission.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- CODE DIVISON -->
-    <div class="my-3 mutate">
-        <div class="h2 text-center text-light fst-italic">Common (several can be used at once)</div>
-
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/emptyPockets.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Empty Pockets</h5>
-                    <p class="card-text">Carried ammo for primary and secondary weapons reduced by 50%.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/ammoDump.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Ammo Dump</h5>
-                    <p class="card-text">When reloading a weapon all ammo left in the magazine will be lost.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/lowCap.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Low Capacity</h5>
-                    <p class="card-text">Primary and secondary weapon magazines are reduced by 50%.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/rookie.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Rookie</h5>
-                    <p class="card-text">All your class perks except for the first one won't work.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/slow.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Slow</h5>
-                    <p class="card-text">You can't sprint.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/asthma.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Asthma</h5>
-                    <p class="card-text">You will slowly lose your health (3% per second) when sprinting.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/smallPharm.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Small Pharma</h5>
-                    <p class="card-text">You won't find any medkits on the mission.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/defenseless.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Defenseless</h5>
-                    <p class="card-text">You won't find any defense kits or defenses on the mission.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/shakeyHands.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Shaky Hands</h5>
-                    <p class="card-text">Shooting on the move and without aiming is extremely inaccurate.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/limitedReach.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Limited Reach</h5>
-                    <p class="card-text">All firearms won't deal damage on distance longer than 50 meters (165 feet).</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/thief.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Thief</h5>
-                    <p class="card-text">No ammo crates, but each melee kill restores 3% of your primary and secondary weapon's ammo. +50% melee damage to zombies.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/looter.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Looter</h5>
-                    <p class="card-text">You won't find equipment bags on the mission, but your equipment will be constantly regenerating (100 seconds to replenish to maximum).</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/revenge.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Revenge</h5>
-                    <p class="card-text">Team members will produce a huge explosion when they die.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/iFeelYourPain.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">I Feel Your Pain</h5>
-                    <p class="card-text">A randomly chosen player will have 100% more health, but all damage taken by the team redirects to him. If he dies, it's game over.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/treason.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Treason</h5>
-                    <p class="card-text">Friendly fire is tripled for the whole team.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/weakness.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Weakness</h5>
-                    <p class="card-text">Melee attacks do 75% less damage than they normally would.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/nightTime.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Night Time</h5>
-                    <p class="card-text">Many more idle zombies will be scattered throughout the levels.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/pinnedDown.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Pinned Down</h5>
-                    <p class="card-text">You can be pinned to the ground by far fewer zombies than usual.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/nemesis.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Nemesis</h5>
-                    <p class="card-text">You will be chased throughout the entire mission by a Bull that can't be killed.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/eliteSquad.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Elite Squad</h5>
-                    <p class="card-text">You can encounter unusual zombies who are very hard to kill. They're very slow but they can instantly pin you down.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/aDud.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">A Dud</h5>
-                    <p class="card-text">All explosives do 75% less damage to zombies.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/ironHide.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Iron Hide</h5>
-                    <p class="card-text">Zombies are harder to stagger with bullet hits.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/undying.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Undying</h5>
-                    <p class="card-text">Special zombies will have twice as much health as usual.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/justAScratch.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Just A Scratch</h5>
-                    <p class="card-text">Zombies won't take any damage from headshots.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/chainsaw.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Chainsaw Massacre</h5>
-                    <p class="card-text">Only chainsaws are available as heavy weapons for the entire mission.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/dieHard.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Die Hard</h5>
-                    <p class="card-text">All team members have 50% more health.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/classWeakGS.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Class Weakness: Gunslinger</h5>
-                    <p class="card-text">Gunslinger will have 50% less health and will inflict 50% less damage to enemies.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/classWeakHR.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Class Weakness: Hellraiser</h5>
-                    <p class="card-text">Hellraiser will have 50% less health and will inflict 50% less damage to enemies.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/classWeakM.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Class Weakness: Medic</h5>
-                    <p class="card-text">Medic will have 50% less health and will inflict 50% less damage to enemies.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/classWeakF.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Class Weakness: Fixer</h5>
-                    <p class="card-text">Fixer will have 50% less health and will inflict 50% less damage to enemies.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/classWeakS.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Class Weakness: Slasher</h5>
-                    <p class="card-text">Slasher will have 50% less health and will inflict 50% less damage to enemies.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/classWeakEx.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Class Weakness: Exterminator</h5>
-                    <p class="card-text">Exterminator will have 50% less health and will inflict 50% less damage to enemies.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/classWeakDM.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Class Weakness: Dronemaster</h5>
-                    <p class="card-text">Dronemaster will have 50% less health and will inflict 50% less damage to enemies.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/classWeakV.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Class Weakness: Vanguard</h5>
-                    <p class="card-text">Vanguard will have 50% less health and will inflict 50% less damage to enemies.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/airStrike.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Airstrike</h5>
-                    <p class="card-text">Mortar attacks periodically occur during the wave.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/theImpaler.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">The Impaler</h5>
-                    <p class="card-text">Health is restored on melee kill, but medkits are no longer found on the mission.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/whatWasThatBoom.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">What Was That Boom</h5>
-                    <p class="card-text">All primary weapons have explosive ammo.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/doubleBenefits.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Double Benefits</h5>
-                    <p class="card-text">All secondary weapons have double damage.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/lifeBuoy.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Lifebuoy</h5>
-                    <p class="card-text">When you revive an ally, you both gain a masking effect for 6 seconds.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/legDay.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Leg Day</h5>
-                    <p class="card-text">When climbing, the player loses some health and all stamina.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/primaryWeak.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Primary Weakness</h5>
-                    <p class="card-text">Primary weapon damage reduced by 75%.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/healingEx.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Healing Explosions</h5>
-                    <p class="card-text">Explosions form devices and heavy weapons restore health.</p>
-                </div>
-            </div>
-        </div>
-        <div class="list-group my-2 px-2 mutate-list mx-auto">
-            <div class="card mx-auto trans d-flex flex-row p-3 w-100">
-                <div class="col-md-4 align-self-center text-center">
-                    <img src="./images/minedCorpses.png" class="img rounded-start">
-                </div>
-                <div class="card-body text-light p-2">
-                    <h5 class="card-title">Mined Corpses</h5>
-                    <p class="card-text">Zombies killed by headshot explode, but only players take damage from the explosion.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
 </body>
 
 </html>
