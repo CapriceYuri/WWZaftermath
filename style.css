@@ -11,6 +11,7 @@ body.rank {
   height: 100vh;
   background-image: url("images/wallpaper2.jpg");
   background-position: center;
+  background-attachment: fixed;
   background-position-y: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -74,15 +75,17 @@ td {
   color: orange;
 }
 
-.leaderboard {
-  display: flex;
-  justify-content: center;
+.trans {
+  -webkit-backdrop-filter: invert(65%);
+          backdrop-filter: invert(65%);
+  background-color: transparent;
 }
 
-.leader-table {
-  min-width: 300px;
-  width: 400px;
-  -webkit-backdrop-filter: invert(70%) !important;
-          backdrop-filter: invert(70%) !important;
-  border-radius: 10px;
+.mutate img {
+  width: 70px;
+  height: 70px;
+}
+
+.mutate-list {
+  width: 80%;
 }/*# sourceMappingURL=style.css.map */
