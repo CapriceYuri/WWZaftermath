@@ -9,10 +9,11 @@ body {
 
 body.rank {
   background-image: url("images/wallpaper2.jpg");
+  background-color: #303030;
   background-position: center;
-  background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-attachment: fixed;
+  background-size: fill;
 }
 
 .container {
