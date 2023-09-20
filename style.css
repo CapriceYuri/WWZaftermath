@@ -7,18 +7,12 @@ body {
   background-size: fill;
 }
 
-.mutate {
-  overflow: hidden;
-}
-
 body.rank {
-  height: 100vh;
   background-image: url("images/wallpaper2.jpg");
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: auto;
 }
 
 .container {
