@@ -17,8 +17,117 @@ let countK = 0;
 const colL = document.querySelectorAll('.col-l')
 let countL = 0;
 
+const randomize = document.querySelector('.random')
+let optionB = [...colB]
+let optionC = [...colC]
+let optionD = [...colD]
+let optionF = [...colF]
+let optionG = [...colG]
+let optionH = [...colH]
+let optionJ = [...colJ]
+let optionK = [...colK]
+let optionL = [...colL]
 
+randomize.addEventListener('click', () => {
+    let random = Math.floor(Math.random() * 4);
+    for (let i in optionB) {
+        optionB[i].classList.remove('pick');
+        countB = 0
+    }
+    countB++;
+    optionB[random].classList.add('pick');
 
+})
+
+randomize.addEventListener('click', () => {
+    let random = Math.floor(Math.random() * 4);
+
+    for (let i in optionC) {
+        optionC[i].classList.remove('pick');
+        countC = 0;
+    }
+    countC++;
+    optionC[random].classList.add('pick');
+})
+
+randomize.addEventListener('click', () => {
+    let random = Math.floor(Math.random() * 4);
+
+    for (let i in optionD) {
+        optionD[i].classList.remove('pick');
+        countD = 0;
+    }
+    countD++;
+    optionD[random].classList.add('pick');
+})
+
+randomize.addEventListener('click', () => {
+    let random = Math.floor(Math.random() * 4);
+
+    for (let i in optionF) {
+        optionF[i].classList.remove('pick');
+        countF = 0;
+    }
+    countF++;
+    optionF[random].classList.add('pick');
+})
+
+randomize.addEventListener('click', () => {
+    let random = Math.floor(Math.random() * 4);
+
+    for (let i in optionG) {
+        optionG[i].classList.remove('pick');
+        countG = 0;
+    }
+    countG++;
+    optionG[random].classList.add('pick');
+})
+
+randomize.addEventListener('click', () => {
+    let random = Math.floor(Math.random() * 4);
+
+    for (let i in optionH) {
+        optionH[i].classList.remove('pick');
+        countH = 0;
+    }
+    countH++;
+    optionH[random].classList.add('pick');
+})
+
+randomize.addEventListener('click', () => {
+    let random = Math.floor(Math.random() * 4);
+
+    for (let i in optionJ) {
+        optionJ[i].classList.remove('pick');
+        countJ = 0;
+    }
+    countJ++;
+    optionJ[random].classList.add('pick');
+})
+
+randomize.addEventListener('click', () => {
+    let random = Math.floor(Math.random() * 4);
+
+    for (let i in optionK) {
+        optionK[i].classList.remove('pick');
+        countK = 0;
+    }
+    countK++;
+    optionK[random].classList.add('pick');
+})
+
+randomize.addEventListener('click', () => {
+    let random = Math.floor(Math.random() * 4);
+
+    for (let i in optionL) {
+        optionL[i].classList.remove('pick');
+        countL = 0;
+    }
+    countL++;
+    optionL[random].classList.add('pick');
+})
+
+// CODE DIVISION
 for (let i = 0; i < colB.length; i++) {
     colB[i].addEventListener('click', function () {
         this.classList.toggle('pick')
@@ -26,14 +135,17 @@ for (let i = 0; i < colB.length; i++) {
 }
 colB.forEach(option => {
     option.addEventListener('click', () => {
-        if (option.classList.contains('pick')){
+        if (option.classList.contains('pick')) {
             countB++;
+            console.log(countB)
         } else {
-            countB --;
+            countB--;
+            console.log(countB)
         }
-        if (countB > 1){
+        if (countB > 1) {
             option.classList.remove('pick');
             countB--;
+            console.log(countB)
         }
     })
 })
@@ -45,12 +157,12 @@ for (let i = 0; i < colC.length; i++) {
 }
 colC.forEach(option => {
     option.addEventListener('click', () => {
-        if (option.classList.contains('pick')){
+        if (option.classList.contains('pick')) {
             countC++;
         } else {
-            countC --;
+            countC--;
         }
-        if (countC > 1){
+        if (countC > 1) {
             option.classList.remove('pick');
             countC--;
         }
@@ -64,12 +176,12 @@ for (let i = 0; i < colD.length; i++) {
 }
 colD.forEach(option => {
     option.addEventListener('click', () => {
-        if (option.classList.contains('pick')){
+        if (option.classList.contains('pick')) {
             countD++;
         } else {
-            countD --;
+            countD--;
         }
-        if (countD > 1){
+        if (countD > 1) {
             option.classList.remove('pick');
             countD--;
         }
@@ -85,12 +197,12 @@ for (let i = 0; i < colF.length; i++) {
 }
 colF.forEach(option => {
     option.addEventListener('click', () => {
-        if (option.classList.contains('pick')){
+        if (option.classList.contains('pick')) {
             countF++;
         } else {
-            countF --;
+            countF--;
         }
-        if (countF > 1){
+        if (countF > 1) {
             option.classList.remove('pick');
             countF--;
         }
@@ -104,12 +216,12 @@ for (let i = 0; i < colG.length; i++) {
 }
 colG.forEach(option => {
     option.addEventListener('click', () => {
-        if (option.classList.contains('pick')){
+        if (option.classList.contains('pick')) {
             countG++;
         } else {
-            countG --;
+            countG--;
         }
-        if (countG > 1){
+        if (countG > 1) {
             option.classList.remove('pick');
             countG--;
         }
@@ -123,12 +235,12 @@ for (let i = 0; i < colH.length; i++) {
 }
 colH.forEach(option => {
     option.addEventListener('click', () => {
-        if (option.classList.contains('pick')){
+        if (option.classList.contains('pick')) {
             countH++;
         } else {
-            countH --;
+            countH--;
         }
-        if (countH > 1){
+        if (countH > 1) {
             option.classList.remove('pick');
             countH--;
         }
@@ -142,12 +254,12 @@ for (let i = 0; i < colJ.length; i++) {
 }
 colJ.forEach(option => {
     option.addEventListener('click', () => {
-        if (option.classList.contains('pick')){
+        if (option.classList.contains('pick')) {
             countJ++;
         } else {
-            countJ --;
+            countJ--;
         }
-        if (countJ > 1){
+        if (countJ > 1) {
             option.classList.remove('pick');
             countJ--;
         }
@@ -161,12 +273,12 @@ for (let i = 0; i < colK.length; i++) {
 }
 colK.forEach(option => {
     option.addEventListener('click', () => {
-        if (option.classList.contains('pick')){
+        if (option.classList.contains('pick')) {
             countK++;
         } else {
-            countK --;
+            countK--;
         }
-        if (countK > 1){
+        if (countK > 1) {
             option.classList.remove('pick');
             countK--;
         }
@@ -180,14 +292,17 @@ for (let i = 0; i < colL.length; i++) {
 }
 colL.forEach(option => {
     option.addEventListener('click', () => {
-        if (option.classList.contains('pick')){
+        if (option.classList.contains('pick')) {
             countL++;
         } else {
-            countL --;
+            countL--;
         }
-        if (countL > 1){
+        if (countL > 1) {
             option.classList.remove('pick');
             countL--;
         }
     })
 })
+// CODE DIVISION
+
+
