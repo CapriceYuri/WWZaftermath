@@ -2,6 +2,7 @@ const perks = document.querySelectorAll("tr img");
 const pName = document.querySelector('.perk-name')
 const pInfo = document.querySelector('.perk-info')
 
+
 // CODE DIVISION
 perks.forEach(item => {
     item.addEventListener('mouseover', () => {
