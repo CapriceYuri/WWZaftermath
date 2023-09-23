@@ -10,6 +10,13 @@ body {
     height: 400px;
 }
 
+.navbar-brand {
+    font-family: monospace;
+    font-style: italic;
+    font-weight: bold;
+    color: orange;
+}
+
 table,
 tbody,
 tr,
@@ -17,33 +24,4 @@ th,
 td {
     background-color: rgba(0, 0, 0, 0) !important;
     backdrop-filter: blur(20px)
-}
-
-.offcanvas a {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    font-size: 1.4em;
-    color: #ffffff;
-    transition: transform 100ms ease-in-out;
-  }
-
-.offcanvas a:hover,
-.offcanvas a:focus {
-  color: orange;
-}
-
-.offcanvas a:hover {
-  transform: scale(1.2);
-}
-
-.navbar-brand {
-  font-family: monospace;
-  font-style: italic;
-  font-weight: bold;
-  color: orange;
-}
-
-.trans {
-  -webkit-backdrop-filter: invert(65%);
-          backdrop-filter: invert(65%);
-  background-color: transparent;
 }
