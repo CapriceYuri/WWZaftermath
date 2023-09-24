@@ -2,7 +2,6 @@ body {
     background-color: #1e1e1e;
 }
 .table-img{
-    min-height: 100px;
     max-height: 400px;
     width: 100%;
 }
@@ -20,4 +19,8 @@ th,
 td {
     background-color: rgba(0, 0, 0, 0) !important;
     backdrop-filter: blur(20px)
+}
+
+a {
+    text-decoration: none;
 }
