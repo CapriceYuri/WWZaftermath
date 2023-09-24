@@ -24,3 +24,10 @@ td {
 a {
     text-decoration: none;
 }
+
+.BOX2{
+    display: none;
+}
+.BOX1{
+    display: block;
+}

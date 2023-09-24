@@ -304,5 +304,3 @@ colL.forEach(option => {
     })
 })
 // CODE DIVISION
-
-

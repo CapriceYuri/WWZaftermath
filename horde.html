@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous" defer></script>
     <link rel="stylesheet" href="touchup.css" />
+    <script src="logicH.js" defer></script>
     <script src="https://kit.fontawesome.com/852e8a85e4.js" crossorigin="anonymous" defer></script>
 </head>
 
@@ -27,247 +28,473 @@
 
 
     <!-- BODY Content -->
+    <div class="d-flex justify-content-center my-4">
+        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" checked>
+            <label class="btn btn-outline-primary" for="btnradio1">HARD</label>
 
-    <!-- JAPAN -->
-    <div class="col-md-8 col-12 my-4 mx-auto">
-        <div>
-            <div class="text-light h2 d-flex justify-content-center align-items-center mb-0"><img src="images/hordeJapanicon.png" class="me-2">XL Tokyo (H)</div>
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio2">
+            <label class="btn btn-outline-primary" for="btnradio2">NORMAL</label>
         </div>
-        <table class="table table-striped table-borderless table-dark rounded-5">
-            <thead>
-                <tr>
-                    <td colspan=4 class="table-img align-middle">
-                        <div class="img-fluid"><img class="table-img-target img-fluid" src="images/hordeXLJapan.png"></div>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Wave #</th>
-                    <th scope="col">Source</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row"><img src="images/firstPlace.png"><i class="fa-solid fa-person-rifle"></i></th>
-                    <td>ABA-180MM</td>
-                    <td>28</td>
-                    <td><a href="https://www.youtube.com/watch?v=rz3vFs1akc4&ab_channel=JYSoon" target="_blank">Full</a></td>
-                </tr>
-                <tr>
-                    <th scope="row"><img src="images/secondPlace.png"></th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th scope="row"><img src="images/thirdPlace.png"></th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
     </div>
-
-    <!-- ROME -->
-    <div class="col-md-8 col-12 my-4 mx-auto">
-        <div>
-            <div class="text-light h2 d-flex justify-content-center align-items-center mb-0"><img src="images/hordeRicon.png" class="me-2">XL Rome (H)</div>
-        </div>
-        <table class="table table-striped table-borderless rounded-5 table-dark">
-            <thead>
-                <tr>
-                    <td colspan=4 class="table-img align-middle">
-                        <div class="img-fluid"><img class="table-img-target img-fluid" src="images/hordeXLRome.png"></div>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Wave #</th>
-                    <th scope="col">Source</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row"><img src="images/firstPlace.png"><i class="fa-solid fa-people-group"></i></th>
-                    <td>貓白</td>
-                    <td>81</td>
-                    <td><a href="https://www.youtube.com/watch?v=LABCyfjCNH0&list=PLDYihq39QKsn5ne3G3smRkvW-3hd8zOmi&index=1&ab_channel=%E8%B2%93%E7%99%BD" target="_blank">Part 1</a> <a href="https://www.youtube.com/watch?v=6Mu7rN6Kka8&list=PLDYihq39QKsn5ne3G3smRkvW-3hd8zOmi&index=2&ab_channel=%E8%B2%93%E7%99%BD" target="_blank">Part 2</a></td>
-                </tr>
-                <tr>
-                    <th scope="row"><img src="images/secondPlace.png"><i class="fa-solid fa-people-group"></i></th>
-                    <td>LegioX Wintersky</td>
-                    <td>61</td>
-                    <td><a href="https://www.youtube.com/watch?v=7vyWeRqXEE0&ab_channel=LegioXWintersky" target="_blank">Full</a></td>
-                </tr>
-                <tr>
-                    <th scope="row"><img src="images/thirdPlace.png"><i class="fa-solid fa-people-group"></i></th>
-                    <td>Villainize</td>
-                    <td>38</td>
-                    <td><a href="https://www.youtube.com/watch?v=_FMtQh0cYBQ&ab_channel=Villainize" target="_blank">Full</a></td>
-                </tr>
-                <tr>
-                    <th scope="row"><i class="fa-solid fa-people-group"></i></th>
-                    <td>Rabi William</td>
-                    <td>35</td>
-                    <td><a href="https://www.youtube.com/watch?v=sGksBUE_05U&ab_channel=%E3%83%A9%E3%83%93%E3%82%A6%E3%82%A3%E3%83%AA%E3%82%A2%E3%83%A0-RabiWilliam-" target="_blank">Full</a></td>
-                </tr>
-                <tr>
-                    <th scope="row"><i class="fa-solid fa-person-rifle"></i></th>
-                    <td>SiberianPsych0</td>
-                    <td>20</td>
-                    <td><a href="https://www.youtube.com/watch?v=xvGjaTjMauM&ab_channel=SiberianPsych0" target="_blank">Full</a></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <!-- SOUTH KOREA -->
-    <div class="col-md-8 col-12 my-4 mx-auto">
-        <div>
-            <div class="text-light h2 d-flex justify-content-center align-items-center mb-0"><img src="images/hordeSKicon.png" class="me-2">South Korea (H)</div>
-        </div>
-        <table class="table table-striped table-borderless rounded-5 table-dark">
-            <thead>
-                <tr>
-                    <td colspan=4 class="table-img align-middle">
-                        <div class="img-fluid"><img class="table-img-target img-fluid" src="images/hordeSK.png"></div>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Wave #</th>
-                    <th scope="col">Source</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row"><img src="images/firstPlace.png"><i class="fa-solid fa-people-group"></i></th>
-                    <td>tokuhime1582</td>
-                    <td>64</td>
-                    <td><a href="https://www.youtube.com/watch?v=usyUM4H49_s&t=8779s&ab_channel=KimPetrasandGames" target="_blank">Full</a></td>
-                </tr>
-                <tr>
-                    <th scope="row"><img src="images/secondPlace.png"><i class="fa-solid fa-people-group"></i></th>
-                    <td>WesleyAnge</td>
-                    <td>61</td>
-                    <td><a href="https://www.youtube.com/watch?v=zGT5wC5MUBI&ab_channel=WesleyAnge" target="_blank">Full</a></td>
-                </tr>
-                <tr>
-                    <th scope="row"><img src="images/thirdPlace.png"><i class="fa-solid fa-people-group"></i></th>
-                    <td>SiberianPsych0</td>
-                    <td>41</td>
-                    <td><a href="https://www.youtube.com/watch?v=8wIvRcx-KJg&ab_channel=SiberianPsych0" target="_blank">Full</a></td>
-                </tr>
-                <tr>
-                    <th scope="row"><i class="fa-solid fa-person-rifle"></i></th>
-                    <td>FmeABA</td>
-                    <td>28</td>
-                    <td><a href="https://www.youtube.com/watch?v=9T2hIIwFRNA&ab_channel=JYSoon" target="_blank">Full</a></td>
-                </tr>
-                <tr>
-                    <th scope="row"><i class="fa-solid fa-people-group"></i></th>
-                    <td>VenaTix</td>
-                    <td>24</td>
-                    <td><a href="https://www.youtube.com/watch?v=NddhpAdhLss&ab_channel=Venatix" target="_blank">Full</a></td>
-                </tr>
-                <tr>
-                    <th scope="row"><i class="fa-solid fa-person-rifle"></i></th>
-                    <td>Rainiere13</td>
-                    <td>22</td>
-                    <td><a href="https://www.youtube.com/watch?v=S_Mr8DdkNX4&ab_channel=Rainiere888" target="_blank">Full</a></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <!-- NEW YORK -->
-    <div class="col-md-8 col-12 my-4 mx-auto">
-        <table class="table table-striped table-borderless rounded-5 table-dark">
+    <!-- CODE DIVISION -->
+    <div class="BOX2">
+        <div class="col-md-8 col-12 my-4 mx-auto">
             <div>
-                <div class="text-light h2 d-flex justify-content-center align-items-center mb-0"><img src="images/hordeNYicon.png" class="me-2">New York (H)</div>
+                <div class="text-light h2 d-flex justify-content-center align-items-center mb-0"><img src="images/hordeJapanicon.png" class="me-2">XL Tokyo (N)</div>
             </div>
-            <thead>
-                <tr>
-                    <td colspan=4 class="table-img align-middle">
-                        <div class="img-fluid"><img class="table-img-target img-fluid" src="images/hordeNY.png"></div>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Wave #</th>
-                    <th scope="col">Source</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row"><img src="images/firstPlace.png"><i class="fa-solid fa-people-group"></i></th>
-                    <td>SiberianPsych0</td>
-                    <td>70</td>
-                    <td><a href="https://www.youtube.com/watch?v=Ao2Fd6WEdB4&ab_channel=SiberianPsych0" target="_blank">Full</a></td>
-                </tr>
-                <tr>
-                    <th scope="row"><img src="images/secondPlace.png"><i class="fa-solid fa-people-group"></i></th>
-                    <td>LongBienStreet</td>
-                    <td>19</td>
-                    <td><a href="https://www.youtube.com/watch?v=xrpYWAqRy-4&ab_channel=Tr%E1%BB%8Dng%C4%90%E1%BA%A1t" target="_blank">Full</a></td>
-                </tr>
-                <tr>
-                    <th scope="row"><img src="images/thirdPlace.png"></th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <!-- Jerusalem -->
-    <div class="col-md-8 col-12 my-4 mx-auto">
-        <div>
-            <div class="text-light h2 d-flex justify-content-center align-items-center mb-0"><img src="images/hordeJicon.png" class="me-2">Jerusalem (H)</div>
+            <table class="table table-striped table-borderless table-dark rounded-5">
+                <thead>
+                    <tr>
+                        <td colspan=4 class="table-img align-middle">
+                            <div class="img-fluid"><img class="table-img-target img-fluid" src="images/hordeXLJapan.png"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Wave #</th>
+                        <th scope="col">Source</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><img src="images/firstPlace.png"></i></th>
+                        <td></td>
+                        <td></td>
+                        <td><a href="#" target="_blank"></a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><img src="images/secondPlace.png"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><img src="images/thirdPlace.png"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <table class="table table-striped table-borderless rounded-5 table-dark">
-            <thead>
-                <tr>
-                    <td colspan=4 class="table-img align-middle">
-                        <div class="img-fluid"><img class="table-img-target img-fluid" src="images/hordeJ.png"></div>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Wave #</th>
-                    <th scope="col">Source</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row"><img src="images/firstPlace.png"><i class="fa-solid fa-people-group"></i></th>
-                    <td>SiberianPsych0</td>
-                    <td>45</td>
-                    <td><a href="https://www.youtube.com/watch?v=2_FSYDw7So8&ab_channel=SiberianPsych0" target="_blank">Full</a></td>
-                </tr>
-                <tr>
-                    <th scope="row"><img src="images/secondPlace.png"><i class="fa-solid fa-people-group"></i></th>
-                    <td>LongBienStreet</td>
-                    <td>18</td>
-                    <td><a href="https://www.youtube.com/watch?v=TQKaulcvGbc&ab_channel=Tr%E1%BB%8Dng%C4%90%E1%BA%A1t" target="_blank">Full</a></td>
-                </tr>
-                <tr>
-                    <th scope="row"><img src="images/thirdPlace.png"></th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
+
+        <!-- ROME -->
+        <div class="col-md-8 col-12 my-4 mx-auto">
+            <div>
+                <div class="text-light h2 d-flex justify-content-center align-items-center mb-0"><img src="images/hordeRicon.png" class="me-2">XL Rome (N)</div>
+            </div>
+            <table class="table table-striped table-borderless rounded-5 table-dark">
+                <thead>
+                    <tr>
+                        <td colspan=4 class="table-img align-middle">
+                            <div class="img-fluid"><img class="table-img-target img-fluid" src="images/hordeXLRome.png"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Wave #</th>
+                        <th scope="col">Source</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><img src="images/firstPlace.png"></i></th>
+                        <td></td>
+                        <td></td>
+                        <td><a href="#" target="_blank"></a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><img src="images/secondPlace.png"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><img src="images/thirdPlace.png"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- SOUTH KOREA -->
+        <div class="col-md-8 col-12 my-4 mx-auto">
+            <div>
+                <div class="text-light h2 d-flex justify-content-center align-items-center mb-0"><img src="images/hordeSKicon.png" class="me-2">South Korea (N)</div>
+            </div>
+            <table class="table table-striped table-borderless rounded-5 table-dark">
+                <thead>
+                    <tr>
+                        <td colspan=4 class="table-img align-middle">
+                            <div class="img-fluid"><img class="table-img-target img-fluid" src="images/hordeSK.png"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Wave #</th>
+                        <th scope="col">Source</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><img src="images/firstPlace.png"></i></th>
+                        <td></td>
+                        <td></td>
+                        <td><a href="#" target="_blank"></a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><img src="images/secondPlace.png"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><img src="images/thirdPlace.png"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- NEW YORK -->
+        <div class="col-md-8 col-12 my-4 mx-auto">
+            <table class="table table-striped table-borderless rounded-5 table-dark">
+                <div>
+                    <div class="text-light h2 d-flex justify-content-center align-items-center mb-0"><img src="images/hordeNYicon.png" class="me-2">New York (N)</div>
+                </div>
+                <thead>
+                    <tr>
+                        <td colspan=4 class="table-img align-middle">
+                            <div class="img-fluid"><img class="table-img-target img-fluid" src="images/hordeNY.png"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Wave #</th>
+                        <th scope="col">Source</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><img src="images/firstPlace.png"></i></th>
+                        <td></td>
+                        <td></td>
+                        <td><a href="#" target="_blank"></a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><img src="images/secondPlace.png"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><img src="images/thirdPlace.png"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Jerusalem -->
+        <div class="col-md-8 col-12 my-4 mx-auto">
+            <div>
+                <div class="text-light h2 d-flex justify-content-center align-items-center mb-0"><img src="images/hordeJicon.png" class="me-2">Jerusalem (N)</div>
+            </div>
+            <table class="table table-striped table-borderless rounded-5 table-dark">
+                <thead>
+                    <tr>
+                        <td colspan=4 class="table-img align-middle">
+                            <div class="img-fluid"><img class="table-img-target img-fluid" src="images/hordeJ.png"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Wave #</th>
+                        <th scope="col">Source</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><img src="images/firstPlace.png"></i></th>
+                        <td></td>
+                        <td></td>
+                        <td><a href="#" target="_blank"></a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><img src="images/secondPlace.png"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><img src="images/thirdPlace.png"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
+
+
+
+
+    <!-- CODE DIVISION -->
+    <div class="BOX1">
+        <!-- JAPAN -->
+        <div class="col-md-8 col-12 my-4 mx-auto">
+            <div>
+                <div class="text-light h2 d-flex justify-content-center align-items-center mb-0"><img src="images/hordeJapanicon.png" class="me-2">XL Tokyo (H)</div>
+            </div>
+            <table class="table table-striped table-borderless table-dark rounded-5">
+                <thead>
+                    <tr>
+                        <td colspan=4 class="table-img align-middle">
+                            <div class="img-fluid"><img class="table-img-target img-fluid" src="images/hordeXLJapan.png"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Wave #</th>
+                        <th scope="col">Source</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><img src="images/firstPlace.png"><i class="fa-solid fa-person-rifle"></i></th>
+                        <td>ABA-180MM</td>
+                        <td>28</td>
+                        <td><a href="https://www.youtube.com/watch?v=rz3vFs1akc4&ab_channel=JYSoon" target="_blank">Full</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><img src="images/secondPlace.png"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><img src="images/thirdPlace.png"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- ROME -->
+        <div class="col-md-8 col-12 my-4 mx-auto">
+            <div>
+                <div class="text-light h2 d-flex justify-content-center align-items-center mb-0"><img src="images/hordeRicon.png" class="me-2">XL Rome (H)</div>
+            </div>
+            <table class="table table-striped table-borderless rounded-5 table-dark">
+                <thead>
+                    <tr>
+                        <td colspan=4 class="table-img align-middle">
+                            <div class="img-fluid"><img class="table-img-target img-fluid" src="images/hordeXLRome.png"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Wave #</th>
+                        <th scope="col">Source</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><img src="images/firstPlace.png"><i class="fa-solid fa-people-group"></i></th>
+                        <td>貓白</td>
+                        <td>81</td>
+                        <td><a href="https://www.youtube.com/watch?v=LABCyfjCNH0&list=PLDYihq39QKsn5ne3G3smRkvW-3hd8zOmi&index=1&ab_channel=%E8%B2%93%E7%99%BD" target="_blank">Part 1</a> <a href="https://www.youtube.com/watch?v=6Mu7rN6Kka8&list=PLDYihq39QKsn5ne3G3smRkvW-3hd8zOmi&index=2&ab_channel=%E8%B2%93%E7%99%BD" target="_blank">Part 2</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><img src="images/secondPlace.png"><i class="fa-solid fa-people-group"></i></th>
+                        <td>LegioX Wintersky</td>
+                        <td>61</td>
+                        <td><a href="https://www.youtube.com/watch?v=7vyWeRqXEE0&ab_channel=LegioXWintersky" target="_blank">Full</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><img src="images/thirdPlace.png"><i class="fa-solid fa-people-group"></i></th>
+                        <td>Villainize</td>
+                        <td>38</td>
+                        <td><a href="https://www.youtube.com/watch?v=_FMtQh0cYBQ&ab_channel=Villainize" target="_blank">Full</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><i class="fa-solid fa-people-group"></i></th>
+                        <td>Rabi William</td>
+                        <td>35</td>
+                        <td><a href="https://www.youtube.com/watch?v=sGksBUE_05U&ab_channel=%E3%83%A9%E3%83%93%E3%82%A6%E3%82%A3%E3%83%AA%E3%82%A2%E3%83%A0-RabiWilliam-" target="_blank">Full</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><i class="fa-solid fa-person-rifle"></i></th>
+                        <td>SiberianPsych0</td>
+                        <td>20</td>
+                        <td><a href="https://www.youtube.com/watch?v=xvGjaTjMauM&ab_channel=SiberianPsych0" target="_blank">Full</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- SOUTH KOREA -->
+        <div class="col-md-8 col-12 my-4 mx-auto">
+            <div>
+                <div class="text-light h2 d-flex justify-content-center align-items-center mb-0"><img src="images/hordeSKicon.png" class="me-2">South Korea (H)</div>
+            </div>
+            <table class="table table-striped table-borderless rounded-5 table-dark">
+                <thead>
+                    <tr>
+                        <td colspan=4 class="table-img align-middle">
+                            <div class="img-fluid"><img class="table-img-target img-fluid" src="images/hordeSK.png"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Wave #</th>
+                        <th scope="col">Source</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><img src="images/firstPlace.png"><i class="fa-solid fa-people-group"></i></th>
+                        <td>tokuhime1582</td>
+                        <td>64</td>
+                        <td><a href="https://www.youtube.com/watch?v=usyUM4H49_s&t=8779s&ab_channel=KimPetrasandGames" target="_blank">Full</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><img src="images/secondPlace.png"><i class="fa-solid fa-people-group"></i></th>
+                        <td>WesleyAnge</td>
+                        <td>61</td>
+                        <td><a href="https://www.youtube.com/watch?v=zGT5wC5MUBI&ab_channel=WesleyAnge" target="_blank">Full</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><img src="images/thirdPlace.png"><i class="fa-solid fa-people-group"></i></th>
+                        <td>SiberianPsych0</td>
+                        <td>41</td>
+                        <td><a href="https://www.youtube.com/watch?v=8wIvRcx-KJg&ab_channel=SiberianPsych0" target="_blank">Full</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><i class="fa-solid fa-person-rifle"></i></th>
+                        <td>FmeABA</td>
+                        <td>28</td>
+                        <td><a href="https://www.youtube.com/watch?v=9T2hIIwFRNA&ab_channel=JYSoon" target="_blank">Full</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><i class="fa-solid fa-people-group"></i></th>
+                        <td>VenaTix</td>
+                        <td>24</td>
+                        <td><a href="https://www.youtube.com/watch?v=NddhpAdhLss&ab_channel=Venatix" target="_blank">Full</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><i class="fa-solid fa-person-rifle"></i></th>
+                        <td>Rainiere13</td>
+                        <td>22</td>
+                        <td><a href="https://www.youtube.com/watch?v=S_Mr8DdkNX4&ab_channel=Rainiere888" target="_blank">Full</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- NEW YORK -->
+        <div class="col-md-8 col-12 my-4 mx-auto">
+            <table class="table table-striped table-borderless rounded-5 table-dark">
+                <div>
+                    <div class="text-light h2 d-flex justify-content-center align-items-center mb-0"><img src="images/hordeNYicon.png" class="me-2">New York (H)</div>
+                </div>
+                <thead>
+                    <tr>
+                        <td colspan=4 class="table-img align-middle">
+                            <div class="img-fluid"><img class="table-img-target img-fluid" src="images/hordeNY.png"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Wave #</th>
+                        <th scope="col">Source</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><img src="images/firstPlace.png"><i class="fa-solid fa-people-group"></i></th>
+                        <td>SiberianPsych0</td>
+                        <td>70</td>
+                        <td><a href="https://www.youtube.com/watch?v=Ao2Fd6WEdB4&ab_channel=SiberianPsych0" target="_blank">Full</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><img src="images/secondPlace.png"><i class="fa-solid fa-people-group"></i></th>
+                        <td>LongBienStreet</td>
+                        <td>19</td>
+                        <td><a href="https://www.youtube.com/watch?v=xrpYWAqRy-4&ab_channel=Tr%E1%BB%8Dng%C4%90%E1%BA%A1t" target="_blank">Full</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><img src="images/thirdPlace.png"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Jerusalem -->
+        <div class="col-md-8 col-12 my-4 mx-auto">
+            <div>
+                <div class="text-light h2 d-flex justify-content-center align-items-center mb-0"><img src="images/hordeJicon.png" class="me-2">Jerusalem (H)</div>
+            </div>
+            <table class="table table-striped table-borderless rounded-5 table-dark">
+                <thead>
+                    <tr>
+                        <td colspan=4 class="table-img align-middle">
+                            <div class="img-fluid"><img class="table-img-target img-fluid" src="images/hordeJ.png"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Wave #</th>
+                        <th scope="col">Source</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><img src="images/firstPlace.png"><i class="fa-solid fa-people-group"></i></th>
+                        <td>SiberianPsych0</td>
+                        <td>45</td>
+                        <td><a href="https://www.youtube.com/watch?v=2_FSYDw7So8&ab_channel=SiberianPsych0" target="_blank">Full</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><img src="images/secondPlace.png"><i class="fa-solid fa-people-group"></i></th>
+                        <td>LongBienStreet</td>
+                        <td>18</td>
+                        <td><a href="https://www.youtube.com/watch?v=TQKaulcvGbc&ab_channel=Tr%E1%BB%8Dng%C4%90%E1%BA%A1t" target="_blank">Full</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><img src="images/thirdPlace.png"></th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 
 
 </body>
