@@ -1,10 +1,12 @@
 body {
     background-color: #1e1e1e;
 }
-.table-img{
+
+.table-img {
     max-height: 400px;
     width: 100%;
 }
+
 .navbar-brand {
     font-family: monospace;
     font-style: italic;
@@ -25,9 +27,14 @@ a {
     text-decoration: none;
 }
 
-.BOX2{
+.BOX2 {
     display: none;
 }
-.BOX1{
+
+.BOX1 {
+    display: none;
+}
+
+.BOX0 {
     display: block;
 }
