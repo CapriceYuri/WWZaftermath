@@ -36,5 +36,13 @@ a {
 }
 
 .BOX0 {
+    display: none;
+}
+
+.BOX3 {
+    display: none;
+}
+
+.BOX4 {
     display: block;
 }
