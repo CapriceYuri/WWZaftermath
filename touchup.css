@@ -36,7 +36,7 @@ a {
 }
 
 .BOX0 {
-    display: none;
+    display: block;
 }
 
 .BOX3 {
@@ -44,5 +44,5 @@ a {
 }
 
 .BOX4 {
-    display: block;
+    display: none;
 }
