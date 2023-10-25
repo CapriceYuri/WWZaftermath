@@ -36,11 +36,11 @@ a {
 }
 
 .BOX0 {
-    display: none;
+    display: block;
 }
 
 .BOX3 {
-    display: block;
+    display: none;
 }
 
 .BOX4 {
