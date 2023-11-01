@@ -33,7 +33,7 @@ perks.forEach(item => {
                 break;
             case 'gsb4':
                 pName.textContent = 'Special Mag'
-                pInfo.textContent = 'Reload speed increased by 25% on all weapons.'
+                pInfo.textContent = 'Penetration of all weapons is increased by 1 for 5 seconds after killing by grenade.'
                 break;
 
             // Second Column
@@ -179,7 +179,7 @@ perks.forEach(item => {
                 break;
             case 'gsk4':
                 pName.textContent = `It's Not Over`
-                pInfo.textContent = `When you become the last member of your team still standing, your equipment gets fully restocked (cooldown: 180 seconds).`
+                pInfo.textContent = `When you become the last member of your team still standing you gain the ability to use equipment without spending for 10 seconds (cooldown 180 seconds).`
                 break;
 
             // 3 Third Column
@@ -324,7 +324,7 @@ perks.forEach(item => {
             // 2 Third Column
             case 'hrh1':
                 pName.textContent = 'Free Refill I'
-                pInfo.textContent = 'Restores 1% of primary weapon ammo for each kill made with equipment.'
+                pInfo.textContent = 'Restores 2% of primary weapon ammo for each kill made with equipment.'
                 break;
             case 'hrh2':
                 pName.textContent = 'Free Refill II'
@@ -364,7 +364,7 @@ perks.forEach(item => {
                 break;
             case 'hrj4':
                 pName.textContent = 'Alert Red!'
-                pInfo.textContent = `C4 explosions also release a gas cloud that grants a masking effect to players and hurts zombies.`
+                pInfo.textContent = `C4 explosions also release deadly gas harmful to zombies.`
                 break;
 
             // 3 Second Column
@@ -603,7 +603,7 @@ perks.forEach(item => {
                 break;
             case 'ml4':
                 pName.textContent = `Emergency Measures`
-                pInfo.textContent = `Penetration of SMGs is increased by 1 while the player's health is below 30%.`
+                pInfo.textContent = `Penetration of SMGs is increased by 1 while the player's health is below 35%.`
                 break;
 
             // Fourth Set
@@ -1337,7 +1337,7 @@ perks.forEach(item => {
                 break;
             case 'dmg4':
                 pName.textContent = `Clear!`
-                pInfo.textContent = `If a player followed by a Quadrocopter is incapacitated, the Quadrocopter will revive them and get depleted (cooldown: 180 seconds).`
+                pInfo.textContent = `If a player followed by a Quadrocopter is incapacitated, the Quadrocopter will revive them with temporary health boost and get depleted (cooldown: 180 seconds).`
                 break;
 
             // 2 Third Column
@@ -1419,7 +1419,7 @@ perks.forEach(item => {
                 break;
             case 'dml4':
                 pName.textContent = `Gathered My Thoughts`
-                pInfo.textContent = `The player followed by your Quadrocopter receives 25% more sprint stamina.`
+                pInfo.textContent = `The player followed by your Quadrocopter receives 50% more sprint stamina.`
                 break;
 
             // Fourth Set

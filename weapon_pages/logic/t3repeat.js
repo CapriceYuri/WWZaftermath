@@ -116,8 +116,8 @@ nod3.addEventListener('change', () => {
     if (nod3.checked) {
         cTempV1 = addPercent(7, 10) * 10
 
-        currentPower = (((currentPower * 10) - (cTempV1)) / 10)
-        currentPowerBar = convertToPercent(parseFloat(currentPowerBar) - (cTempV1))
+        currentPower = (((currentPower * 10) + (cTempV1)) / 10)
+        currentPowerBar = convertToPercent(parseFloat(currentPowerBar) + (cTempV1))
         powerV.textContent = Math.trunc(currentPower);
         powerBar.style.width = currentPowerBar;
         console.log(currentPower)
@@ -130,8 +130,8 @@ nod3.addEventListener('change', () => {
 
         nod3App = true;
     } else if (nod3App && !nod3.checked) {
-        currentPower = (((currentPower * 10) + (cTempV1)) / 10)
-        currentPowerBar = convertToPercent(parseFloat(currentPowerBar) + (cTempV1))
+        currentPower = (((currentPower * 10) - (cTempV1)) / 10)
+        currentPowerBar = convertToPercent(parseFloat(currentPowerBar) - (cTempV1))
         powerV.textContent = Math.trunc(currentPower);
         powerBar.style.width = currentPowerBar;
         console.log(currentPower)
